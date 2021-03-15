@@ -1,0 +1,24 @@
+mixin svg(svgName)
+	svg
+		use(xlink:href=`./assets/images/svg/sprite.svg#${svgName}`)
+
+mixin login-btn(val)
+	a.login-btn.h-btn(href="#")= val
+
+mixin blue-btn(val)
+	a.blue-btn.h-btn(href="#")= val
+
+mixin blue-button(val)
+	button.blue-btn.h-btn(href="#")= val
+
+mixin burger 
+	.burger.h-btn 
+		div
+
+mixin title(val)
+	span.section-title= val
+
+mixin more-btn(val)
+	a.more-btn
+		span= val
+		+svg('more-arrow')

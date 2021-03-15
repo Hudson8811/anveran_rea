@@ -1,0 +1,18 @@
+@import 'libs/fonts.css';
+@import 'libs/reset.css';
+@import 'libs/slick';
+
+@import 'partials/_var';
+@import 'partials/mixins';
+@import 'partials/main';
+@import 'partials/components';
+
+@import 'blocks/header';
+@import 'blocks/footer';
+
+@import 'blocks/h-favorites';
+@import 'blocks/f-step';
+@import 'blocks/actual';
+@import 'blocks/conditions';
+@import 'blocks/object-map';
+@import 'blocks/materials';

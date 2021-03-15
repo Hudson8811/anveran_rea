@@ -1,0 +1,44 @@
+section.section.actual
+    .container
+        +title('Актуальные предложения')
+        .actual-desc 
+            span.actual-desc__title Самые свежие и выгодные предложения для покупки
+            +more-btn('Посмотреть все')
+        
+        .actual-slider 
+            - for (var y = 0; y < 8; y++)
+                .actual-slider__item 
+                    .actual-card
+                        .actual-card__slider-wrapper
+                            .actual-card__tag С балконом
+                            .actual-card__slider
+                                - for (var x = 0; x < 3; x++)
+                                    .actual-card__slider-item 
+                                        img.actual-card__slider-img(src="https://via.placeholder.com/320x198", alt="")
+                        .actual-card__content 
+                            .actual-card__desc
+                                p.actual-card__desc-title Lorem ipsum, 290 м#[sup() 2]
+                                p.actual-card__desc-place Lorem ipsum dolor sit amet.
+                                .actual-card__favorite
+                            
+                            .actual-card__price-wrapper 
+                                p.actual-card__price €00 000
+                                p.actual-card__price-before €00 000
+                            
+                            .actual-card__square €000/м#[sup() 2]
+                            
+                            ul.actual-card__ptags
+                                li.actual-card__ptags-item
+                                    +svg('bed')
+                                    p.actual-card__ptags-title x5
+                                    span.actual-card__ptags-tooltype 3 спальни
+
+                                li.actual-card__ptags-item
+                                    +svg('armchair')
+                                    p.actual-card__ptags-title x2
+                                    span.actual-card__ptags-tooltype 2 дивана
+                                li.actual-card__ptags-item
+                                    +svg('shower')
+                                    p.actual-card__ptags-title x4
+                                    span.actual-card__ptags-tooltype 4 душа
+                        

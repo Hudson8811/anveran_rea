@@ -1,0 +1,22 @@
+header.header 
+    nav.container.header__container
+        a.header__logo.h-btn(href="#") 
+            +svg('logo')
+        a.header__location(href="#")
+            +svg('location')
+            span Мадрид
+        
+        ul.header-menu
+            each val in ['Апартаменты и квартиры', 'Продажа', 'Таунхаусы и бунгало', 'Виллы и дома', 'Статьи']
+                li.header-menu__item 
+                    a.header-menu__link.h-btn(href="#")= val 
+        
+        select.header__lang
+            each val in ['ru', 'eu', 'dg']
+                option(value=val)= val
+        
+        include h-favorites
+
+        +login-btn('Войти в аккаунт')
+        +burger
+        

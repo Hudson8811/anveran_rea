@@ -1,0 +1,15 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'Main page',
+		class: 'main-page'
+		};
+
+block main
+	include blocks/f-step
+	include blocks/actual
+	include blocks/conditions
+	include blocks/object-map
+	include blocks/materials

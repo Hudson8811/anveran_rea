@@ -1,0 +1,21 @@
+footer.footer
+    nav.footer__container
+
+        .footer__col.footer-desc 
+            a.footer-desc__logo.h-btn(href="#")
+                +svg('f-logo')
+            p.footer-desc__disclaimer © 2021 | Anveran.
+                br
+                | Все права защищены. Копирование разрешается только при наличии #[span(class="nowrap") ссылки на] этот сайт.
+        
+        .footer__col.footer-info 
+            a.footer-info__phone.h-btn(href="tel:+34800808962") +3 (480) 080-89-62
+            p.footer-info__desc Оставьте заявку или позвоните нам #[span(class="nowrap") по телефону.] Это бесплатно!
+            +blue-btn('Бесплатный звонок')
+
+        .footer__col.footer-menu__wrapper
+            p.footer-menu__title МЕНЮ
+            ul.footer-menu
+                each val in ['Найти недвижимость', 'Избранное', 'Контакты', 'О компании']
+                    li.footer-menu__item 
+                        a.footer-menu__link.h-btn(href="#")= val 

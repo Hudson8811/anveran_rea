@@ -1,0 +1,140 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 99;
+  padding: 16px 0;
+  background-color: #fff;
+  filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.1));
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    @include mq('tablet-small') {
+      flex-wrap: wrap;
+
+      .login-btn {
+        width: calc(100% - 50px);
+      }
+    }
+
+    @include mq('phone') {
+      .login-btn {
+        width: calc(100% - 80px);
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 115px;
+    height: 27px;
+    flex-shrink: 0;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    padding: 0 4px;
+    margin: 0 auto 0 auto;
+    flex-shrink: 0;
+
+    @include mq('desktop') {
+      margin: 0 0 0 auto;
+    }
+
+    svg {
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-right: 7px;
+    }
+
+    span {
+      display: block;
+      width: fit-content;
+      @include font-source-sans(false, #aaaeb3, 500, false);
+    }
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 4.51%;
+
+    @include mq('desktop') {
+      position: fixed;
+      right: 0;
+      top: var(--header-height);
+      z-index: 98;
+      display: block;
+      padding: 0 8px 20px 8px;
+      margin: 0;
+      width: 320px;
+      height: calc(100vh - 72px);
+      overflow-y: auto;
+      background-color: #fff;
+      transition: transform 0.2s linear;
+      transform: translateX(100%);
+
+      &.is--active {
+        transform: translate(0);
+      }
+    }
+
+    &__item {
+      display: block;
+      padding: 0 12px;
+
+      @include mq('desktop') {
+        & + & {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    &__link {
+      display: block;
+      @include font-source-sans(14px, #161718, false, 18px);
+      text-decoration: none;
+    }
+  }
+
+  &__lang {
+    display: block;
+    width: 50px;
+    padding: 0 23px 0 6px;
+    margin: 0 16px 0 auto;
+    @include font-source-sans(false, #161718, 500, false);
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    background: 100% 50% / 20px url(../images/svg/sprite.svg#lang) no-repeat;
+    flex-shrink: 0;
+
+    @include mq('desktop') {
+      margin-left: 0;
+    }
+
+    option {
+      @include font-source-sans(false, #161718, 500, false);
+    }
+  }
+}

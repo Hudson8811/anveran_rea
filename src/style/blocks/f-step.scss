@@ -1,0 +1,250 @@
+.f-step {
+  position: relative;
+  z-index: 2;
+  padding: 160px 0 228px;
+  margin-bottom: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include mq('tablet'){
+    padding: 50px 0;
+    margin-bottom: 20px;
+  }
+
+  &:before {
+    @include pseudo;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.325) 100%);
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    @include container(1104px, calc(100% - 40px));
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 32px;
+    @include font-source-sans(32px, #fff, 500, 40px);
+
+    @include mq('tablet'){
+      margin-bottom: 20px;
+      @include font-source-sans(24px, #fff, 500, 30px);
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    @include mq('tablet-wide'){
+      display: block;
+    }
+
+    .blue-btn {
+      padding: 20px 27px;
+
+      @include mq('tablet-wide'){
+        margin-top: 20px;
+      }
+
+      @include mq('tablet'){
+        width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: calc(100% - 225px);
+    margin-right: auto;
+    padding: 12px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    @include mq('tablet-wide'){
+      width: 100%;
+    }
+
+    @include mq('tablet'){
+      flex-wrap: wrap;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+    &-title {
+      display: block;
+      @include font-source-sans(12px, #7f8285, 400, 16px);
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    @include font-source-sans(15px, #161718, 400, 20px);
+    caret-color: #4383ff;
+
+    @include input-placeholder {
+      color: #c4c8cc;
+    }
+
+    &:focus {
+      @include input-placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &__search {
+    position: relative;
+    width: 34.36%;
+
+    @include mq('tablet'){
+      width: 100%;
+    }
+
+    &-content {
+      position: absolute;
+      left: -16px;
+      top: calc(100% + 20px);
+      z-index: 9;
+      display: none;
+      padding: 16px;
+      background: #ffffff;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 32px rgba(0, 0, 0, 0.16);
+      border-radius: 4px;
+      max-width: 383px;
+
+      @include mq('tablet'){
+        max-width: none; 
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &-item {
+      position: relative;
+      display: block;
+      width: fit-content;
+      @include truncate(100%);
+      cursor: pointer;
+
+      @include mq('tablet'){
+        width: 100%;
+      }
+
+      &__desc {
+        color: #7f8285;
+      }
+
+      &__dote {
+        @include font-source-sans(false, #7f8285, 600, false);
+      }
+      & + & {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__types {
+    position: relative;
+    width: 29.1%;
+    padding: 0 16px;
+    margin: 0 16px 0 11px;
+    border-left: 1px solid #c4c8cc;
+    border-right: 1px solid #c4c8cc;
+
+    @include mq('tablet'){
+      width: 100%;
+      margin: 20px 0;
+      padding: 0;
+      border: none;
+    }
+
+    &:after {
+      @include pseudo;
+      @include centering-y;
+      right: 14px;
+      width: 10px;
+      height: 5px;
+      background: center / cover url('../images/svg/sprite.svg#select_arrow');
+    }
+
+    &-input {
+      width: 100%;
+      @include truncate(205px);
+
+      @include mq('tablet'){
+        max-width: 100%;
+      }
+    }
+
+    &-content {
+      position: absolute;
+      top: calc(100% + 20px);
+      left: 0;
+      z-index: 10;
+      display: none;
+      width: 100%;
+      padding: 16px;
+      background: #ffffff;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 32px rgba(0, 0, 0, 0.16);
+      border-radius: 4px;
+    }
+
+    &-item {
+      position: relative;
+      display: block;
+      width: fit-content;
+      padding-right: 22px;
+      @include truncate(100%);
+      cursor: pointer;
+
+      & + & {
+        margin-top: 16px;
+      }
+
+      &.is--active {
+        &:after {
+          @include pseudo;
+          @include centering-y;
+          right: 0;
+          width: 16px;
+          height: 16px;
+          background: center / cover url('../images/svg/sprite.svg#blue-check');
+        }
+      }
+    }
+  }
+
+  &__price {
+    width: 68px;
+
+    @include mq('tablet'){
+      width: calc(50% - 20px);
+    }
+
+    & + & {
+      margin-left: 5.9%;
+
+      @include mq('tablet'){margin-left: 20px;}
+    }
+  }
+}

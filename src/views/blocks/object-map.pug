@@ -1,0 +1,30 @@
+section.section.object-map 
+    .container
+        +title('Найти недвижимость')
+        .object-map__wrapper
+            .object-map__frame
+                img.object-map__frame-bg(src="assets/images/object-map.png", alt="")
+                .object-map__frame-content
+                    p.object-map__frame-title 1 495 128 объектов
+                    p.object-map__frame-desc Доступны для покупки
+            
+            .object-map__places
+                ul.object-map__places-col 
+                    li.object-map__places-title По региону
+                    - for (var x = 0; x < 9; x++)
+                        li.object-map__places-item Андалусия 
+                            span.object-map__places-item__numbers 00 000
+
+                ul.object-map__places-col 
+                    li.object-map__places-title По городам
+                    - for (var x = 0; x < 9; x++)
+                        li.object-map__places-item Торревьеха 
+                            span.object-map__places-item__numbers 0 000
+
+                ul.object-map__places-col 
+                    li.object-map__places-title По типу недвижимости
+                    - for (var x = 0; x < 9; x++)
+                        li.object-map__places-item Апартаменты 
+                            span.object-map__places-item__numbers 0 000
+
+                +more-btn('Смотреть больше')

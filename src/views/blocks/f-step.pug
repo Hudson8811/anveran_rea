@@ -1,0 +1,37 @@
+section.section.f-step(style="background-image: url(https://via.placeholder.com/1440x520)")
+    .f-step__container
+        p.f-step__title Первый шаг к мечте
+        form.f-step__form
+            .f-step__content
+                label.f-step__label.f-step__search
+                    span.f-step__label-title Где хотите покупать?
+                    input.f-step__input.f-step__search-input(type="text", placeholder="Введите город")
+
+                    ul.f-step__search-content
+                        li.f-step__search-item.is--active Саламанка#[span(class="f-step__search-item__dote") ,] #[span(class="f-step__search-item__desc") Кастилия и Леон]
+                        li.f-step__search-item Сан-Себастьян#[span(class="f-step__search-item__dote") ,] #[span(class="f-step__search-item__desc") Страна Басков]
+                        li.f-step__search-item Санта-Круз-де-Тенерифе#[span(class="f-step__search-item__dote") ,] #[span(class="f-step__search-item__desc") Канарские острова]
+                        li.f-step__search-item Сантандер#[span(class="f-step__search-item__dote") ,] #[span(class="f-step__search-item__desc") Кантабрия]
+                        li.f-step__search-item Сарагоса#[span(class="f-step__search-item__dote") ,] #[span(class="f-step__search-item__desc") Арагон]
+                        li.f-step__search-item Севилья#[span(class="f-step__search-item__dote") ,] #[span(class="f-step__search-item__desc") Андалусия]
+
+                label.f-step__label.f-step__types
+                    span.f-step__label-title Тип недвижимости
+                    span.f-step__input.f-step__types-input Все типы недвижимости
+
+                    ul.f-step__types-content
+                        li.f-step__types-item.is--active Все типы недвижимости
+                        li.f-step__types-item Апартаменты и Квартиры
+                        li.f-step__types-item Таунхаусы и Бунгало
+                        li.f-step__types-item Виллы и дома
+                        li.f-step__types-item Все типы недвижимости
+                
+                label.f-step__label.f-step__price
+                    span.f-step__label-title Цена от
+                    input.f-step__input(type="text", placeholder="Макс. €")
+                
+                label.f-step__label.f-step__price
+                    span.f-step__label-title Цена до
+                    input.f-step__input(type="text", placeholder="Макс. €")
+
+            +blue-button('Найти недвижимость')

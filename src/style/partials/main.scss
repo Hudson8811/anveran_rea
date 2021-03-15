@@ -1,0 +1,52 @@
+* {
+  --header-height: 72px;
+
+  @include mq('tablet-small') {
+    --header-height: 130px;
+  }
+}
+
+body {
+  @include font-source-sans(15px, #161718, 400, 20px);
+  background-color: #fff;
+
+  &.is--unscrolble {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .main {
+    padding-top: var(--header-height);
+    flex-grow: 1;
+  }
+}
+
+.container {
+  @include container(1328px, calc(100% - 40px));
+}
+
+.nowrap {
+  @include nowrap;
+}
+
+.h-btn {
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.section{
+  padding: 60px 0;
+
+  @include mq('tablet'){
+    padding: 30px 0;
+  }
+}

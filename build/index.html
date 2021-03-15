@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <title>Main page</title>
+  </head>
+  <body>
+    <div class="wrapper main-page">
+      <header class="header"> 
+        <nav class="container header__container"><a class="header__logo h-btn" href="#"> 
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#logo"></use>
+            </svg></a><a class="header__location" href="#">
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#location"></use>
+            </svg><span>Мадрид</span></a>
+          <ul class="header-menu">
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Апартаменты и квартиры</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Продажа</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Таунхаусы и бунгало</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Виллы и дома</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Статьи</a></li>
+          </ul>
+          <select class="header__lang">
+            <option value="ru">ru</option>
+            <option value="eu">eu</option>
+            <option value="dg">dg</option>
+          </select>
+          <div class="h-favorites"><a class="h-favorites__icon" href="#"> 
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#favorites"></use>
+              </svg><span>2</span></a>
+            <div class="h-favorites__content"></div>
+          </div><a class="login-btn h-btn" href="#">Войти в аккаунт</a>
+          <div class="burger h-btn"> 
+            <div></div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="section f-step" style="background-image: url(https://via.placeholder.com/1440x520)">
+          <div class="f-step__container">
+            <p class="f-step__title">Первый шаг к мечте</p>
+            <form class="f-step__form">
+              <div class="f-step__content">
+                <label class="f-step__label f-step__search"><span class="f-step__label-title">Где хотите покупать?</span>
+                  <input class="f-step__input f-step__search-input" type="text" placeholder="Введите город">
+                  <ul class="f-step__search-content">
+                    <li class="f-step__search-item is--active">Саламанка<span class="f-step__search-item__dote">,</span> <span class="f-step__search-item__desc">Кастилия и Леон</span></li>
+                    <li class="f-step__search-item">Сан-Себастьян<span class="f-step__search-item__dote">,</span> <span class="f-step__search-item__desc">Страна Басков</span></li>
+                    <li class="f-step__search-item">Санта-Круз-де-Тенерифе<span class="f-step__search-item__dote">,</span> <span class="f-step__search-item__desc">Канарские острова</span></li>
+                    <li class="f-step__search-item">Сантандер<span class="f-step__search-item__dote">,</span> <span class="f-step__search-item__desc">Кантабрия</span></li>
+                    <li class="f-step__search-item">Сарагоса<span class="f-step__search-item__dote">,</span> <span class="f-step__search-item__desc">Арагон</span></li>
+                    <li class="f-step__search-item">Севилья<span class="f-step__search-item__dote">,</span> <span class="f-step__search-item__desc">Андалусия</span></li>
+                  </ul>
+                </label>
+                <label class="f-step__label f-step__types"><span class="f-step__label-title">Тип недвижимости</span><span class="f-step__input f-step__types-input">Все типы недвижимости</span>
+                  <ul class="f-step__types-content">
+                    <li class="f-step__types-item is--active">Все типы недвижимости</li>
+                    <li class="f-step__types-item">Апартаменты и Квартиры</li>
+                    <li class="f-step__types-item">Таунхаусы и Бунгало</li>
+                    <li class="f-step__types-item">Виллы и дома</li>
+                    <li class="f-step__types-item">Все типы недвижимости</li>
+                  </ul>
+                </label>
+                <label class="f-step__label f-step__price"><span class="f-step__label-title">Цена от</span>
+                  <input class="f-step__input" type="text" placeholder="Макс. €">
+                </label>
+                <label class="f-step__label f-step__price"><span class="f-step__label-title">Цена до</span>
+                  <input class="f-step__input" type="text" placeholder="Макс. €">
+                </label>
+              </div>
+              <button class="blue-btn h-btn" href="#">Найти недвижимость</button>
+            </form>
+          </div>
+        </section>
+        <section class="section actual">
+          <div class="container"><span class="section-title">Актуальные предложения</span>
+            <div class="actual-desc"> <span class="actual-desc__title">Самые свежие и выгодные предложения для покупки</span><a class="more-btn"><span>Посмотреть все</span>
+                <svg>
+                  <use xlink:href="./assets/images/svg/sprite.svg#more-arrow"></use>
+                </svg></a>
+            </div>
+            <div class="actual-slider"> 
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="actual-slider__item"> 
+                <div class="actual-card">
+                  <div class="actual-card__slider-wrapper">
+                    <div class="actual-card__tag">С балконом</div>
+                    <div class="actual-card__slider">
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                      <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/320x198" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="actual-card__content"> 
+                    <div class="actual-card__desc">
+                      <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                      <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                      <div class="actual-card__favorite"></div>
+                    </div>
+                    <div class="actual-card__price-wrapper"> 
+                      <p class="actual-card__price">€00 000</p>
+                      <p class="actual-card__price-before">€00 000</p>
+                    </div>
+                    <div class="actual-card__square">€000/м<sup>2</sup></div>
+                    <ul class="actual-card__ptags">
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                      </li>
+                      <li class="actual-card__ptags-item">
+                        <svg>
+                          <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                        </svg>
+                        <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section conditions"> 
+          <div class="conditions__container"> <span class="section-title">Лучшие условия для покупателя</span>
+            <div class="conditions__catalog">
+              <div class="conditions__item">
+                <div class="conditions__icon">
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#conditions-item-1"></use>
+                  </svg>
+                </div>
+                <p class="conditions__title">Покупка без комиссий</p>
+                <p class="conditions__desc"> Тщательно отбираем базу объектов, проверяем документы на юридическую чистоту.</p>
+              </div>
+              <div class="conditions__item">
+                <div class="conditions__icon">
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#conditions-item-2"></use>
+                  </svg>
+                </div>
+                <p class="conditions__title">Рассрочка и ипотека</p>
+                <p class="conditions__desc"> Защитим вашу сделку своими средствами в случае потери <span class="nowrap">права собственности.</span></p>
+              </div>
+              <div class="conditions__item">
+                <div class="conditions__icon">
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#conditions-item-3"></use>
+                  </svg>
+                </div>
+                <p class="conditions__title">Золотая виза</p>
+                <p class="conditions__desc"> Все консультации и сервисы компании бесплатны. Вы платите только после сделки.</p>
+              </div>
+              <div class="conditions__item">
+                <div class="conditions__icon">
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#conditions-item-4"></use>
+                  </svg>
+                </div>
+                <p class="conditions__title">Скидки и сертификаты</p>
+                <p class="conditions__desc"> Берём всю рутину на себя, вам не нужно тратить время, чтобы разбираться.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section object-map"> 
+          <div class="container"><span class="section-title">Найти недвижимость</span>
+            <div class="object-map__wrapper">
+              <div class="object-map__frame"><img class="object-map__frame-bg" src="assets/images/object-map.png" alt="">
+                <div class="object-map__frame-content">
+                  <p class="object-map__frame-title">1 495 128 объектов</p>
+                  <p class="object-map__frame-desc">Доступны для покупки</p>
+                </div>
+              </div>
+              <div class="object-map__places">
+                <ul class="object-map__places-col"> 
+                  <li class="object-map__places-title">По региону</li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                  <li class="object-map__places-item">Андалусия <span class="object-map__places-item__numbers">00 000</span></li>
+                </ul>
+                <ul class="object-map__places-col"> 
+                  <li class="object-map__places-title">По городам</li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Торревьеха <span class="object-map__places-item__numbers">0 000</span></li>
+                </ul>
+                <ul class="object-map__places-col"> 
+                  <li class="object-map__places-title">По типу недвижимости</li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                  <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
+                </ul><a class="more-btn"><span>Смотреть больше</span>
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#more-arrow"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section materials"> 
+          <div class="container"> <span class="section-title">Полезные материалы</span>
+            <div class="materials-grid"> 
+              <div class="materials-grid__item" style="background-image: url(https://via.placeholder.com/654x654);">
+                <div class="materials-grid__text"> 
+                  <p class="materials-grid__title">Каков самый надёжный способ уехать из России в Испанию на ПМЖ?</p><span class="materials-grid__tag">YouTube</span>
+                </div>
+              </div>
+              <div class="materials-grid__item" style="background-image: url(https://via.placeholder.com/654x317);">
+                <div class="materials-grid__text"> 
+                  <p class="materials-grid__title">Всё, что нужно знать туристу об Испании. Самый большой виртуальный путеводитель по стране.</p><span class="materials-grid__tag">Статья</span>
+                </div>
+              </div>
+              <div class="materials-grid__item" style="background-image: url(https://via.placeholder.com/317x317);">
+                <div class="materials-grid__text"> 
+                  <p class="materials-grid__title">Это самый захватывающий вид в моей жизни! 😍😍😍 #Spain #Mallorca #Fujifilm #Landscape #...</p><span class="materials-grid__tag">Instagram</span>
+                </div>
+              </div>
+              <div class="materials-grid__item" style="background-image: url(https://via.placeholder.com/654x654);">
+                <div class="materials-grid__text"> 
+                  <p class="materials-grid__title">Современный дом за €12 000 в центре Торревьехи. Реально ли?</p><span class="materials-grid__tag">YouTube</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <nav class="footer__container">
+          <div class="footer__col footer-desc"> <a class="footer-desc__logo h-btn" href="#">
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#f-logo"></use>
+              </svg></a>
+            <p class="footer-desc__disclaimer">© 2021 | Anveran.<br>Все права защищены. Копирование разрешается только при наличии <span class="nowrap">ссылки на</span> этот сайт.</p>
+          </div>
+          <div class="footer__col footer-info"> <a class="footer-info__phone h-btn" href="tel:+34800808962">+3 (480) 080-89-62</a>
+            <p class="footer-info__desc">Оставьте заявку или позвоните нам <span class="nowrap">по телефону.</span> Это бесплатно!</p><a class="blue-btn h-btn" href="#">Бесплатный звонок</a>
+          </div>
+          <div class="footer__col footer-menu__wrapper">
+            <p class="footer-menu__title">МЕНЮ</p>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Найти недвижимость</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Избранное</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Контакты</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="assets/js/main.js"></script>
+    </div>
+  </body>
+</html>

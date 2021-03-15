@@ -1,0 +1,33 @@
+doctype html
+
+block vars
+include ../components/components
+
+
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(property="og:image" content="images/logo.svg")
+		meta(name="format-detection" content="telephone=no")
+		link(href="assets/css/main.css" rel="stylesheet")
+		title= `${page.title}`
+
+	body
+		.wrapper(class=page.class)
+			block header
+				include ../blocks/_header
+
+			main.main
+				block main
+
+			block footer
+				include ../blocks/_footer
+			
+			block popups 
+				include ../blocks/_popups
+
+			block scripts
+				script(src="assets/js/main.js")
