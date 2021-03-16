@@ -1,0 +1,134 @@
+section.filters__section
+    .container
+        .filters__row
+            .filters
+                span.f-step__types-input Все типы недвижимости
+
+                ul.f-step__types-content
+                    li.f-step__types-item.is--active Все типы недвижимости
+                    li.f-step__types-item Апартаменты и Квартиры
+                    li.f-step__types-item Таунхаусы и Бунгало
+                    li.f-step__types-item Виллы и дома
+                    li.f-step__types-item Все типы недвижимости
+            
+            .filters
+                span.f-step__types-input Цена
+
+                ul.f-step__types-content
+                    li.f-step__types-item.is--active Цена
+                    li.f-step__types-item Цена1
+                    li.f-step__types-item Цена2
+                    li.f-step__types-item Цена3
+            
+            .filters
+                span.f-step__types-input Спальни и санузлы
+
+                ul.f-step__types-content
+                    li.f-step__types-item.is--active Спальни и санузлы 
+                    li.f-step__types-item Спальни и санузлы1
+                    li.f-step__types-item Спальни и санузлы2
+                    li.f-step__types-item Спальни и санузлы3
+                    li.f-step__types-item Спальни и санузлы4
+            
+            .filters
+                span.f-step__types-input Площадь м#[sup(class="") 2]
+
+                ul.f-step__types-content
+                    li.f-step__types-item.is--active Площадь м2
+                    li.f-step__types-item 0000
+                    li.f-step__types-item 000
+                    li.f-step__types-item 00000
+                    li.f-step__types-item 0
+            
+            .filters.filters__more
+                span.f-step__types-input Ещё фильтры
+                span.filters__more-icon 2
+
+                form.filters__drop-content 
+                    .filters__drop-heading Ещё фильтры
+                    .filters__drop-wrapper 
+                        .filters__drop-title Расстояние до моря
+                        .filters__drop-row
+                            label.filters__drop 
+                                input(type="radio", name="1")
+                                span Первая линия
+                            label.filters__drop 
+                                input(type="radio", name="1")
+                                span До 100 м.
+                            label.filters__drop 
+                                input(type="radio", name="1")
+                                span До 200 м.
+                            label.filters__drop 
+                                input(type="radio", name="1")
+                                span До 500 м.
+                            label.filters__drop 
+                                input(type="radio", name="1")
+                                span Не важно
+                    
+                    .filters__drop-wrapper 
+                        .filters__drop-title Вид из окна
+                        .filters__drop-row
+                            label.filters__drop.circle 
+                                input(type="radio", name="2")
+                                span Море
+                            label.filters__drop.circle 
+                                input(type="radio", name="2")
+                                span Горы
+                            label.filters__drop.circle 
+                                input(type="radio", name="2")
+                                span Город
+                            label.filters__drop.circle 
+                                input(type="radio", name="2")
+                                span Не важно
+                    
+                    .filters__drop-wrapper 
+                        .filters__drop-title Дополнительно
+                        .filters__drop-row
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Бассейн
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Мебель
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Парковка
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Гараж
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Лифт
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Балкон
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Интернет
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span ТВ
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Сад
+                            label.filters__drop.circle 
+                                input(type="checkbox", name="3")
+                                span Терраса
+                    
+                    .filters__drop-wrapper
+                        button.filters__drop-remove Сбросить фильтры
+                        +black-button('Показать 14 912 вариантов')
+            
+            label.filters.filters__search
+                input.filters__search-input(type="text")
+                a(href="#") Регион 
+            
+            +blue-btn('Поиск')
+    
+        .filters__row.filters__tag-row
+            .filters__tag Расстояние до моря до 500 м.
+                span.filters__tag-close.h-btn
+            .filters__tag Бассейн
+                span.filters__tag-close.h-btn
+            
+            +login-btn('Сбросить')

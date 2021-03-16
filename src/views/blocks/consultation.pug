@@ -1,0 +1,24 @@
+section.section.consultation 
+    .container
+        form.consultation__form
+            p.consultation__title Бесплатная консультация
+            .consultation__row 
+                p.consultation__desc Оставьте заявку или позвоните нам по телефону:
+                a.consultation__phone(href="tel:+3800808962") +3 (480) 080-89-62
+                label.consultation__number
+                    .consultation__number-desc
+                        img.consultation__number-icon(src="assets/images/flag.png", alt="")
+                        select.consultation__number-select
+                            option(value="+34") +34
+                            option(value="+34") +34
+                            option(value="+34") +34
+                    input.consultation__number-input(type="text", placeholder="(XXX) XX-XX-XX")
+                input.consultation__input(type="text", placeholder="Ваше имя - Необязательно")
+                p.consultation__polic Нажимая на кнопку, вы даете согласие на обработку #[a(href="#") персональных данных]
+                button.consultation__btn.blue-btn 
+                    +svg('phone')
+                    span Заказать консультацию
+        .consultation__man
+            img.consultation__man-icon(src="assets/images/c-man.png", alt="", style="width:125px")
+            p.consultation__man-name Валерий Альбертович
+            p.consultation__man-desc Ваш персональный консультант

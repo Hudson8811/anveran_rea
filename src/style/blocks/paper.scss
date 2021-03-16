@@ -1,0 +1,13 @@
+.paper{
+    .section-title{
+        margin-bottom: 32px;
+    }
+
+    p{
+        display: block;
+
+        & + p{
+            margin-top: 20px;
+        }
+    }
+}

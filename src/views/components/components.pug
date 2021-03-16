@@ -19,6 +19,9 @@ mixin title(val)
 	span.section-title= val
 
 mixin more-btn(val)
-	a.more-btn(href="#")
+	a.more-btn.h-btn(href="#")
 		span= val
 		+svg('more-arrow')
+
+mixin black-button(val)
+	button.black-btn.h-btn= val

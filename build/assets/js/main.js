@@ -12,15 +12,16 @@ $(document).ready(function(){
     })
 
     $('.f-step__types-input').click(function(){
-        $('.f-step__types-content').slideToggle(200)
+        $(this).siblings('.f-step__types-content').slideToggle(200)
     })
 
     $('.f-step__types-item').click(function(){
+        var parent = $(this).parents('.f-step__types-content')
         var fStepTypesItemValue = $(this).text()
-        $('.f-step__types-item').removeClass('is--active')
+        parent.children('.f-step__types-item').removeClass('is--active')
         $(this).addClass('is--active')
-        $('.f-step__types-input').html(fStepTypesItemValue)
-        $('.f-step__types-content').slideUp(200)
+        parent.siblings('.f-step__types-input').html(fStepTypesItemValue)
+        parent.slideUp(200)
     })
 
     $('.f-step__search-input').click(function(){
@@ -78,4 +79,45 @@ $(document).ready(function(){
     $('.actual-card__favorite').click(function(){
         $(this).toggleClass('is--active')
     })
+
+    $('.filters__more .f-step__types-input').click(function(){
+      $('.filters__drop-content').slideToggle()
+    })
+
+    $('.imap__content-btn').click(function(){
+      $('.imap__content').toggleClass('is--active')
+    });
+
+    $('.imap__content-filter').click(function(e){
+      e.preventDefault;
+      $(this).toggleClass('is--active')
+    })
 })
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('imap', {
+          center: [55.751574, 37.573856],
+          zoom: 12,
+          controls: []
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Собственный значок метки'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'assets/images/svg/sprite.svg#imap-icon',
+          // Размеры метки.
+          iconImageSize: [100, 100],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-50, -50]
+      })
+
+  myMap.geoObjects
+      .add(myPlacemark)
+});

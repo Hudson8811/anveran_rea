@@ -106,3 +106,16 @@
     margin-left: 8px;
   }
 }
+
+.black-btn{
+  display: block;
+  padding: 10px 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background: #161718;
+  border-radius: 4px;
+
+  @include mq('tablet-small'){
+    @include font-source-sans(12px,false,false,15px);
+  }
+}

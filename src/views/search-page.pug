@@ -1,0 +1,13 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'Search page',
+		class: 'search-page'
+		};
+
+block main
+	include blocks/filters
+	include blocks/imap
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=c3b0db88-afa3-49b1-b1e6-f545d8be8b91&lang=ru_RU", type="text/javascript")

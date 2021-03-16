@@ -60,7 +60,7 @@
                     <li class="f-step__search-item">Севилья<span class="f-step__search-item__dote">,</span> <span class="f-step__search-item__desc">Андалусия</span></li>
                   </ul>
                 </label>
-                <label class="f-step__label f-step__types"><span class="f-step__label-title">Тип недвижимости</span><span class="f-step__input f-step__types-input">Все типы недвижимости</span>
+                <div class="f-step__label f-step__types"><span class="f-step__label-title">Тип недвижимости</span><span class="f-step__input f-step__types-input">Все типы недвижимости</span>
                   <ul class="f-step__types-content">
                     <li class="f-step__types-item is--active">Все типы недвижимости</li>
                     <li class="f-step__types-item">Апартаменты и Квартиры</li>
@@ -68,7 +68,7 @@
                     <li class="f-step__types-item">Виллы и дома</li>
                     <li class="f-step__types-item">Все типы недвижимости</li>
                   </ul>
-                </label>
+                </div>
                 <label class="f-step__label f-step__price"><span class="f-step__label-title">Цена от</span>
                   <input class="f-step__input" type="text" placeholder="Макс. €">
                 </label>
@@ -82,7 +82,7 @@
         </section>
         <section class="section actual">
           <div class="container"><span class="section-title">Актуальные предложения</span>
-            <div class="actual-desc"> <span class="actual-desc__title">Самые свежие и выгодные предложения для покупки</span><a class="more-btn" href="#"><span>Посмотреть все</span>
+            <div class="actual-desc"> <span class="actual-desc__title">Самые свежие и выгодные предложения для покупки</span><a class="more-btn h-btn" href="#"><span>Посмотреть все</span>
                 <svg>
                   <use xlink:href="./assets/images/svg/sprite.svg#more-arrow"></use>
                 </svg></a>
@@ -530,7 +530,7 @@
                   <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
                   <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
                   <li class="object-map__places-item">Апартаменты <span class="object-map__places-item__numbers">0 000</span></li>
-                </ul><a class="more-btn" href="#"><span>Смотреть больше</span>
+                </ul><a class="more-btn h-btn" href="#"><span>Смотреть больше</span>
                   <svg>
                     <use xlink:href="./assets/images/svg/sprite.svg#more-arrow"></use>
                   </svg></a>
@@ -545,17 +545,57 @@
                   <p class="materials__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia.</p><span class="materials__tag">YouTube</span>
                 </div></a><a class="materials__item" style="background-image: url(https://via.placeholder.com/654x317);" href="#">
                 <div class="materials__text"> 
-                  <p class="materials__title">Всё, что нужно знать туристу об Испании. Самый большой виртуальный путеводитель по стране.</p><span class="materials__tag">Статья</span>
+                  <p class="materials__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi reprehenderit quod veniam!</p><span class="materials__tag">Статья</span>
                 </div></a><a class="materials__item" style="background-image: url(https://via.placeholder.com/317x317);" href="#">
                 <div class="materials__text"> 
-                  <p class="materials__title">Это самый захватывающий вид в моей жизни! 😍😍😍 #Spain #Mallorca #Fujifilm #Landscape #...</p><span class="materials__tag">Instagram</span>
+                  <p class="materials__title">Lorem ipsum dolor sit amet. 😍😍😍 #Spain #Mallorca #Fujifilm #Landscape #...</p><span class="materials__tag">Instagram</span>
                 </div></a><a class="materials__item" style="background-image: url(https://via.placeholder.com/317x317);" href="#">
                 <div class="materials__text"> 
-                  <p class="materials__title">Современный дом за €12 000 в центре Торревьехи. Реально ли?</p><span class="materials__tag">YouTube</span>
-                </div></a></div><a class="more-btn" href="#"><span>Больше полезных материалов</span>
+                  <p class="materials__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</p><span class="materials__tag">YouTube</span>
+                </div></a></div><a class="more-btn h-btn" href="#"><span>Больше полезных материалов</span>
               <svg>
                 <use xlink:href="./assets/images/svg/sprite.svg#more-arrow"></use>
               </svg></a>
+          </div>
+        </section>
+        <section class="section consultation"> 
+          <div class="container">
+            <form class="consultation__form">
+              <p class="consultation__title">Бесплатная консультация</p>
+              <div class="consultation__row"> 
+                <p class="consultation__desc">Оставьте заявку или позвоните нам по телефону:</p><a class="consultation__phone" href="tel:+3800808962">+3 (480) 080-89-62</a>
+                <label class="consultation__number">
+                  <div class="consultation__number-desc"><img class="consultation__number-icon" src="assets/images/flag.png" alt="">
+                    <select class="consultation__number-select">
+                      <option value="+34">+34</option>
+                      <option value="+34">+34</option>
+                      <option value="+34">+34</option>
+                    </select>
+                  </div>
+                  <input class="consultation__number-input" type="text" placeholder="(XXX) XX-XX-XX">
+                </label>
+                <input class="consultation__input" type="text" placeholder="Ваше имя - Необязательно">
+                <p class="consultation__polic">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></p>
+                <button class="consultation__btn blue-btn"> 
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#phone"></use>
+                  </svg><span>Заказать консультацию</span>
+                </button>
+              </div>
+            </form>
+            <div class="consultation__man"><img class="consultation__man-icon" src="assets/images/c-man.png" alt="" style="width:125px">
+              <p class="consultation__man-name">Валерий Альбертович</p>
+              <p class="consultation__man-desc">Ваш персональный консультант</p>
+            </div>
+          </div>
+        </section>
+        <section class="section paper"> 
+          <div class="container"><span class="section-title">Продажа квартир в Испании</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod eveniet. Rem sit at inventore tempora nam libero facere ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod eveniet. Rem sit at inventore tempora nam libero facere ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nemo harum exercitationem voluptatem animi dolorem rerum necessitatibus facere, voluptate at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod eveniet. Rem sit at inventore tempora nam libero facere ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, omnis tempora quidem nulla porro soluta distinctio ducimus ad accusamus consequatur fugiat animi architecto dolor quae assumenda nesciunt saepe? Sint, doloribus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit facilis nisi quod delectus provident possimus, sequi similique, ducimus consequuntur neque praesentium soluta repellendus obcaecati aut cupiditate ex quas, repellat commodi. Error nihil modi obcaecati amet corporis, totam similique eligendi cumque aliquid debitis porro consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore tempora deserunt ipsam assumenda, eius sapiente ipsum, saepe odit ut accusantium ducimus veniam sunt eligendi dolor? Porro quidem error sed eum aspernatur nobis vero sunt perferendis dolorum tenetur ducimus cum quos, non necessitatibus ipsa minima ex, voluptatum assumenda voluptas incidunt.</p>
           </div>
         </section>
       </main>
