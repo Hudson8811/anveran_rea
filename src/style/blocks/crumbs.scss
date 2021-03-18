@@ -1,0 +1,29 @@
+.crumbs{
+    padding: 12px 0;
+    background: #F2F3F5;
+
+    &__content{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 -2px;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        margin: 0 2px;
+
+        &:last-child{
+            .crumbs__link{
+                color: #AAAEB3;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__link{
+        display: block;
+        @include font-source-sans(14px,#161718,400,18px);
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,17 @@
+.price-widget 
+    .price-widget__row
+        p.price-widget__title Цена продажи
+        select.price-widget__select
+            each val in ['€','$','p']
+                option(value=val)= val 
+    
+    .actual-card__price-wrapper 
+        p.actual-card__price €00 000
+        p.actual-card__price-before €00 000
+                            
+    .actual-card__square €000/м#[sup() 2]
+    .price-widget__disclamer
+        +svg('disclamer')
+        span Стоимость объекта без учета налогов
+    +blue-btn('Получить консультацию')
+    +border-btn('Записаться на online-просмотр')

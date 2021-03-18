@@ -1,0 +1,55 @@
+.consul-widget {
+  padding: 20px 12px 12px;
+  background: #ffffff;
+  box-shadow: 0px 3px 20px -7px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+  &__man {
+    border-bottom: 1px solid #e1e3e6;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 4px;
+    @include font-source-sans(14px, false, false, 18px);
+  }
+
+  &__image {
+    display: block;
+    width: 102px;
+    margin: 0 auto 16px;
+  }
+
+  &__name {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    @include font-source-sans(16px, #7f8285, 500, 20px);
+  }
+
+  &__phone {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    @include font-source-sans(20px, #161718, 600, 24px);
+  }
+
+  &__desc {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+    @include font-source-sans(12px, #909499, 400, 16px);
+  }
+
+  .login-btn {
+    margin-bottom: 12px;
+  }
+
+  .consultation__polic {
+    text-align: center;
+  }
+}

@@ -1,0 +1,49 @@
+.calculate-widget {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #ffffff;
+  box-shadow: 0px 3px 20px -7px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    background: rgba(67, 131, 255, 0.1);
+    border-radius: 4px;
+
+    svg {
+      display: block;
+      width: 36px;
+      height: 40px;
+    }
+  }
+
+  &__text {
+    display: block;
+    padding-left: 12px;
+
+    .login-btn {
+      padding: 4px 12px;
+      @include font-source-sans(14px, false, false, 18px);
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 4px;
+    @include font-source-sans(16px, false, 500, 20px);
+  }
+
+  &__desc {
+    display: block;
+    margin-bottom: 13px;
+    @include font-source-sans(12px, #aaaeb3, 500, 16px);
+  }
+}

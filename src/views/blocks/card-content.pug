@@ -1,0 +1,72 @@
+.card-content 
+    .card-content__slider-wrapper
+        .card-content__slider-main
+            -for (var i=0;i<6;i++)
+                 .card-content__slider-main__item
+                    img(src="https://via.placeholder.com/991x557", alt="")
+        
+        .card-content__slider-sub
+            -for (var i=0;i<6;i++)
+                 .card-content__slider-sub__item
+                    img(src="https://via.placeholder.com/325x178", alt="")
+    
+    .card-content__slider-dote
+        span.card-content__slider-dote__first 1 
+        span из 
+        span.card-content__slider-dote__last 15
+    
+    .card-content__characteristics
+        p.card-content__characteristics-title Технические характеристики
+        .card-content__characteristics-content
+            .card-content__characteristics-item
+                +svg('ch_icon1')
+                span Общая площадь
+                span 77м #[sup() 2]
+            
+            .card-content__characteristics-item.is--disabled
+                +svg('ch_icon2')
+                span Площадь участка
+                span Нет
+
+            .card-content__characteristics-item
+                +svg('ch_icon3')
+                span Количество комнат
+                span 4
+            
+            .card-content__characteristics-item
+                +svg('ch_icon4')
+                span Отделка
+                span Есть
+            
+            .card-content__characteristics-item
+                +svg('ch_icon5')
+                span Количество спален
+                span 2
+            
+            .card-content__characteristics-item
+                +svg('ch_icon6')
+                span Мебелировка
+                span Есть
+            
+            .card-content__characteristics-item
+                +svg('ch_icon7')
+                span Количество санузлов
+                span 3
+    .card-content__characteristics
+        p.card-content__characteristics-title Описание
+        p.card-content__characteristics-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam deleniti vel nemo nesciunt nam quod, at doloremque rerum qui ducimus eligendi commodi velit. Delectus sequi id, soluta quam fuga aperiam, voluptate reprehenderit inventore minima animi tempore perferendis eius, quaerat dolorem totam consequatur? Cupiditate soluta eligendi repudiandae. Architecto illum quibusdam perferendis labore asperiores dolorum provident, optio maiores, officia veritatis, corporis facilis?
+        p.card-content__characteristics-desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, atque corporis enim nisi beatae iure
+            span.card-content__characteristics-desc-hide Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde eaque hic nobis, fugit quidem vitae maiores exercitationem? Temporibus facilis quia molestiae ratione odit saepe enim esse maiores reprehenderit totam! 
+            +next-btn('Читать далее')
+
+    .card-content__characteristics
+        p.card-content__characteristics-title Местоположение
+        .card-content__characteristics-map
+            #cmap
+    
+    .card-content__characteristics
+        p.card-content__characteristics-title Описание локации
+        img.card-content__characteristics-banner(src="https://via.placeholder.com/991x241", alt="")
+        p.card-content__characteristics-desc Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deleniti, enim accusantium, quod quaerat maxime velit corporis illum quam, esse fuga a sapiente libero! Error aliquam similique quam soluta quidem? dolor sit amet consectetur adipisicing elit. Maiores, atque corporis enim nisi beatae iure
+            span.card-content__characteristics-desc-hide Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde eaque hic nobis, fugit quidem vitae maiores exercitationem? Temporibus facilis quia molestiae ratione odit saepe enim esse maiores reprehenderit totam! 
+            +next-btn('Читать далее')

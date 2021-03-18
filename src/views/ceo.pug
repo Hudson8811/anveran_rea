@@ -1,0 +1,15 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'CEO page',
+		class: 'ceo-page'
+		};
+
+block main
+	include blocks/crumbs
+	include blocks/filters
+	include blocks/ceo
+	include blocks/consultation
+	include blocks/paper

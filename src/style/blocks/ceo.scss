@@ -1,0 +1,237 @@
+.ceo {
+  &__section {
+    position: relative;
+    padding: 25px 0 40px;
+    background-color: #fff;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 11px;
+    @include font-source-sans(32px, false, 500, 40px);
+
+    @include mq('tablet') {
+      @include font-source-sans(24px, false, false, 30px);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 27px;
+    flex-wrap: wrap;
+
+    .imap__content-filter {
+      margin-right: auto;
+    }
+
+    @include mq('desktop') {
+      .pagy {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__searching {
+    display: block;
+    margin-right: 24px;
+    @include font-source-sans(14px, false, 500, 18px);
+  }
+
+  &__list {
+    display: block;
+    margin-left: -16px;
+
+    @include mq('tablet') {
+      margin-left: 0;
+    }
+  }
+
+  &__card-desc {
+    display: block;
+    @include font-source-sans(14px, false, false, 18px);
+    margin-top: 16px;
+
+    @include mq('tablet') {
+      margin-top: 10px;
+      @include font-source-sans(12px, false, false, 16px);
+    }
+  }
+
+  &__item {
+    padding: 16px;
+    width: 100%;
+    border-radius: 4px;
+    transition: background 0.2s linear;
+
+    @include mq('tablet') {
+      padding: 0;
+
+      & + & {
+        margin-top: 20px;
+      }
+    }
+
+    &:hover {
+      background: #f9f9f9;
+
+      @include mq('tablet') {
+        background: transparent;
+      }
+
+      .actual-card__desc-title {
+        color: #4383ff;
+
+        @include mq('tablet') {
+          color: #161718;
+        }
+      }
+    }
+
+    .actual-card {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      border: none;
+      border-radius: 0;
+
+      @include mq('tablet') {
+        display: block;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      .actual-card__slider-wrapper {
+        width: 317px;
+        height: auto;
+
+        @include mq('tablet') {
+          width: 280px;
+          max-width: 100%;
+        }
+
+        .actual-card__slider {
+          margin: 0;
+        }
+
+        .actual-card__slider-item {
+          height: 256px;
+
+          @include mq('tablet') {
+            height: 180px;
+          }
+
+          .actual-card__slider-img {
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .actual-card__content {
+        flex-grow: 1;
+        padding: 0 0 0 24px;
+
+        @include mq('tablet') {
+          padding: 10px 0 0;
+        }
+
+        .actual-card__desc {
+          margin-bottom: 20px;
+
+          @include mq('tablet') {
+            margin-bottom: 10px;
+          }
+        }
+
+        .actual-card__price-wrapper {
+          margin-bottom: 0;
+        }
+
+        .actual-card__desc-title {
+          margin-bottom: 4px;
+          @include font-source-sans(20px, false, 600, 24px);
+          transition: color 0.2s linear;
+        }
+
+        .actual-card__square {
+          margin-bottom: 44px;
+
+          @include mq('tablet') {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .actual-card__favorite {
+      right: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 44px;
+
+    .pagy {
+      margin-right: auto;
+    }
+  }
+
+  &__see {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-title {
+      display: block;
+      margin-right: 12px;
+      @include font-source-sans(14px, false, false, 18px);
+    }
+
+    &-select {
+      display: block;
+      margin: 0;
+      padding: 10px 32px 10px 12px;
+      background: #fff calc(100% - 6px) 50%/20px url(../images/svg/sprite.svg#lang) no-repeat;
+      border: 1px solid #e1e3e6;
+      border-radius: 4px;
+      @include font-source-sans(14px, #4383ff, false, 18px);
+      cursor: pointer;
+      appearance: none;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__content {
+    position: relative;
+    width: calc(100% - 337px);
+
+    @include mq('tablet-wide') {
+      width: 100%;
+    }
+  }
+
+  &__bar {
+    position: relative;
+    padding-top: 57px;
+    width: 317px;
+    margin-left: 20px;
+
+    @include mq('tablet-wide') {
+      display: none;
+    }
+  }
+}

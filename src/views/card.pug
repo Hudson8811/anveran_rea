@@ -1,0 +1,24 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'Card page',
+		class: 'card-page'
+		};
+
+block main
+	include blocks/crumbs
+	include blocks/card-info
+	.container
+		.ceo__wrapper
+			.ceo__content
+				include blocks/card-content
+				include blocks/similar
+			.ceo__bar
+				include blocks/price-widget
+				include blocks/consul-widget
+				include blocks/calculate-widget
+				include blocks/sale-widget
+	
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=c3b0db88-afa3-49b1-b1e6-f545d8be8b91&lang=ru_RU", type="text/javascript")

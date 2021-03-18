@@ -25,3 +25,37 @@ mixin more-btn(val)
 
 mixin black-button(val)
 	button.black-btn.h-btn= val
+
+mixin back-btn(val)
+	a.back-btn.h-btn(href="#")
+		+svg('back-btn')
+		span= val
+
+mixin pdf-btn(val)
+	a.pdf-btn.h-btn(href="#")
+		+svg('pdf')
+		span= val
+
+mixin save-btn(val)
+	a.pdf-btn.h-btn(href="#")
+		+svg('save')
+		span= val
+
+mixin share-btn(val)
+	a.pdf-btn.h-btn(href="#")
+		+svg('link')
+		span= val
+
+mixin next-btn(val)
+	a.next-btn.h-btn(href="#")
+		span= val
+
+mixin border-btn(val)
+	a.border-btn.h-btn(href="#")
+		span= val
+
+mixin blue-phone-btn
+	a.login-btn.blue-phone-btn.h-btn(href="#") Заказать звонок
+
+mixin details-btn(val)
+	a.details-btn.h-btn(href="#")= val

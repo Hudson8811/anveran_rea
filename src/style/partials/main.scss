@@ -43,10 +43,14 @@ body {
   }
 }
 
-.section{
+.section {
   padding: 60px 0;
 
-  @include mq('tablet'){
+  @include mq('tablet') {
     padding: 30px 0;
   }
+}
+
+.card-page .ceo__bar {
+  padding-top: 0;
 }

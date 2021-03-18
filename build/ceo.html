@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <title>CEO page</title>
+  </head>
+  <body>
+    <div class="wrapper ceo-page">
+      <header class="header"> 
+        <nav class="container header__container"><a class="header__logo h-btn" href="#"> 
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#logo"></use>
+            </svg></a><a class="header__location" href="#">
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#location"></use>
+            </svg><span>Мадрид</span></a>
+          <ul class="header-menu">
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Апартаменты и квартиры</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Продажа</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Таунхаусы и бунгало</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Виллы и дома</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Статьи</a></li>
+          </ul>
+          <select class="header__lang">
+            <option value="ru">ru</option>
+            <option value="eu">eu</option>
+            <option value="dg">dg</option>
+          </select>
+          <div class="h-favorites"><a class="h-favorites__icon" href="#"> 
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#favorites"></use>
+              </svg><span>2</span></a>
+            <div class="h-favorites__content"></div>
+          </div><a class="login-btn h-btn" href="#">Войти в аккаунт</a>
+          <div class="burger h-btn"> 
+            <div></div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="crumbs"> 
+          <div class="container"> 
+            <ul class="crumbs__content"> 
+              <li class="crumbs__item"> <a class="crumbs__link" href="#">Главная /</a></li>
+              <li class="crumbs__item"> <a class="crumbs__link" href="#">Недвижимость</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="filters__section">
+          <div class="container">
+            <div class="filters__row">
+              <div class="filters"><span class="f-step__types-input">Все типы недвижимости</span>
+                <ul class="f-step__types-content">
+                  <li class="f-step__types-item is--active">Все типы недвижимости</li>
+                  <li class="f-step__types-item">Апартаменты и Квартиры</li>
+                  <li class="f-step__types-item">Таунхаусы и Бунгало</li>
+                  <li class="f-step__types-item">Виллы и дома</li>
+                  <li class="f-step__types-item">Все типы недвижимости</li>
+                </ul>
+              </div>
+              <div class="filters"><span class="f-step__types-input">Цена</span>
+                <ul class="f-step__types-content">
+                  <li class="f-step__types-item is--active">Цена</li>
+                  <li class="f-step__types-item">Цена1</li>
+                  <li class="f-step__types-item">Цена2</li>
+                  <li class="f-step__types-item">Цена3</li>
+                </ul>
+              </div>
+              <div class="filters"><span class="f-step__types-input">Спальни и санузлы</span>
+                <ul class="f-step__types-content">
+                  <li class="f-step__types-item is--active">Спальни и санузлы </li>
+                  <li class="f-step__types-item">Спальни и санузлы1</li>
+                  <li class="f-step__types-item">Спальни и санузлы2</li>
+                  <li class="f-step__types-item">Спальни и санузлы3</li>
+                  <li class="f-step__types-item">Спальни и санузлы4</li>
+                </ul>
+              </div>
+              <div class="filters"><span class="f-step__types-input">Площадь м<sup>2</sup></span>
+                <ul class="f-step__types-content">
+                  <li class="f-step__types-item is--active">Площадь м2</li>
+                  <li class="f-step__types-item">0000</li>
+                  <li class="f-step__types-item">000</li>
+                  <li class="f-step__types-item">00000</li>
+                  <li class="f-step__types-item">0</li>
+                </ul>
+              </div>
+              <div class="filters filters__more"><span class="f-step__types-input">Ещё фильтры</span><span class="filters__more-icon">2</span>
+                <form class="filters__drop-content"> 
+                  <div class="filters__drop-heading">Ещё фильтры</div>
+                  <div class="filters__drop-wrapper"> 
+                    <div class="filters__drop-title">Расстояние до моря</div>
+                    <div class="filters__drop-row">
+                      <label class="filters__drop"> 
+                        <input type="radio" name="1"><span>Первая линия</span>
+                      </label>
+                      <label class="filters__drop"> 
+                        <input type="radio" name="1"><span>До 100 м.</span>
+                      </label>
+                      <label class="filters__drop"> 
+                        <input type="radio" name="1"><span>До 200 м.</span>
+                      </label>
+                      <label class="filters__drop"> 
+                        <input type="radio" name="1"><span>До 500 м.</span>
+                      </label>
+                      <label class="filters__drop"> 
+                        <input type="radio" name="1"><span>Не важно</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper"> 
+                    <div class="filters__drop-title">Вид из окна</div>
+                    <div class="filters__drop-row">
+                      <label class="filters__drop circle"> 
+                        <input type="radio" name="2"><span>Море</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="radio" name="2"><span>Горы</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="radio" name="2"><span>Город</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="radio" name="2"><span>Не важно</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper"> 
+                    <div class="filters__drop-title">Дополнительно</div>
+                    <div class="filters__drop-row">
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Бассейн</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Мебель</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Парковка</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Гараж</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Лифт</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Балкон</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Интернет</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>ТВ</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Сад</span>
+                      </label>
+                      <label class="filters__drop circle"> 
+                        <input type="checkbox" name="3"><span>Терраса</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper">
+                    <button class="filters__drop-remove">Сбросить фильтры</button>
+                    <button class="black-btn h-btn">Показать 14 912 вариантов</button>
+                  </div>
+                </form>
+              </div>
+              <label class="filters filters__search">
+                <input class="filters__search-input" type="text"><a href="#">Регион </a>
+              </label><a class="blue-btn h-btn" href="#">Поиск</a>
+            </div>
+            <div class="filters__row filters__tag-row">
+              <div class="filters__tag">Расстояние до моря до 500 м.<span class="filters__tag-close h-btn"></span></div>
+              <div class="filters__tag">Бассейн<span class="filters__tag-close h-btn"></span></div><a class="login-btn h-btn" href="#">Сбросить</a>
+            </div>
+          </div>
+        </section>
+        <section class="ceo__section">
+          <div class="container">
+            <p class="ceo__title">Купить недвижимость в Валенсии</p>
+            <div class="ceo__wrapper">
+              <div class="ceo__content">
+                <div class="ceo__heading"> 
+                  <p class="ceo__searching">Найдено 1 412 объявлений</p><a class="imap__content-filter" href="#"> 
+                    <svg>
+                      <use xlink:href="./assets/images/svg/sprite.svg#transl"></use>
+                    </svg>По умолчанию</a>
+                  <ul class="pagy">
+                    <li class="pagy__item"><a class="pagy__link" href="#">Назад</a></li>
+                    <li class="pagy__item"><a class="pagy__link is--active" href="#">1</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">2</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">3</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">4</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">5</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">6</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">7</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">8</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">..</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">24</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">Далее</a></li>
+                  </ul>
+                </div>
+                <div class="ceo__list">
+                  <div class="ceo__item"> 
+                    <div class="actual-card">
+                      <div class="actual-card__slider-wrapper">
+                        <div class="actual-card__tag">С балконом</div>
+                        <div class="actual-card__slider">
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="actual-card__content"> 
+                        <div class="actual-card__desc">
+                          <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                          <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                          <div class="actual-card__favorite"></div>
+                        </div>
+                        <div class="actual-card__price-wrapper"> 
+                          <p class="actual-card__price">€00 000</p>
+                          <p class="actual-card__price-before">€00 000</p>
+                        </div>
+                        <div class="actual-card__square">€000/м<sup>2</sup></div>
+                        <ul class="actual-card__ptags">
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                          </li>
+                        </ul>
+                        <div class="ceo__card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corrupti hic. Quas facere deserunt a aliquam hic, commodi molestias tenetur ab accusamus illo? Laborum amet perferendis facilis voluptatem incidunt! Suscipit magni voluptatem enim voluptates ?</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ceo__item"> 
+                    <div class="actual-card">
+                      <div class="actual-card__slider-wrapper">
+                        <div class="actual-card__tag">С балконом</div>
+                        <div class="actual-card__slider">
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="actual-card__content"> 
+                        <div class="actual-card__desc">
+                          <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                          <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                          <div class="actual-card__favorite"></div>
+                        </div>
+                        <div class="actual-card__price-wrapper"> 
+                          <p class="actual-card__price">€00 000</p>
+                          <p class="actual-card__price-before">€00 000</p>
+                        </div>
+                        <div class="actual-card__square">€000/м<sup>2</sup></div>
+                        <ul class="actual-card__ptags">
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                          </li>
+                        </ul>
+                        <div class="ceo__card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corrupti hic. Quas facere deserunt a aliquam hic, commodi molestias tenetur ab accusamus illo? Laborum amet perferendis facilis voluptatem incidunt! Suscipit magni voluptatem enim voluptates ?</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ceo__item"> 
+                    <div class="actual-card">
+                      <div class="actual-card__slider-wrapper">
+                        <div class="actual-card__tag">С балконом</div>
+                        <div class="actual-card__slider">
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="actual-card__content"> 
+                        <div class="actual-card__desc">
+                          <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                          <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                          <div class="actual-card__favorite"></div>
+                        </div>
+                        <div class="actual-card__price-wrapper"> 
+                          <p class="actual-card__price">€00 000</p>
+                          <p class="actual-card__price-before">€00 000</p>
+                        </div>
+                        <div class="actual-card__square">€000/м<sup>2</sup></div>
+                        <ul class="actual-card__ptags">
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                          </li>
+                        </ul>
+                        <div class="ceo__card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corrupti hic. Quas facere deserunt a aliquam hic, commodi molestias tenetur ab accusamus illo? Laborum amet perferendis facilis voluptatem incidunt! Suscipit magni voluptatem enim voluptates ?</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ceo__item"> 
+                    <div class="actual-card">
+                      <div class="actual-card__slider-wrapper">
+                        <div class="actual-card__tag">С балконом</div>
+                        <div class="actual-card__slider">
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                          <div class="actual-card__slider-item"> <img class="actual-card__slider-img" src="https://via.placeholder.com/317x256" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="actual-card__content"> 
+                        <div class="actual-card__desc">
+                          <p class="actual-card__desc-title">Lorem ipsum, 290 м<sup>2</sup></p>
+                          <p class="actual-card__desc-place">Lorem ipsum dolor sit amet.</p>
+                          <div class="actual-card__favorite"></div>
+                        </div>
+                        <div class="actual-card__price-wrapper"> 
+                          <p class="actual-card__price">€00 000</p>
+                          <p class="actual-card__price-before">€00 000</p>
+                        </div>
+                        <div class="actual-card__square">€000/м<sup>2</sup></div>
+                        <ul class="actual-card__ptags">
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#bed"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x5</p><span class="actual-card__ptags-tooltype">3 спальни</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#armchair"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x2</p><span class="actual-card__ptags-tooltype">2 дивана</span>
+                          </li>
+                          <li class="actual-card__ptags-item">
+                            <svg>
+                              <use xlink:href="./assets/images/svg/sprite.svg#shower"></use>
+                            </svg>
+                            <p class="actual-card__ptags-title">x4</p><span class="actual-card__ptags-tooltype">4 душа</span>
+                          </li>
+                        </ul>
+                        <div class="ceo__card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corrupti hic. Quas facere deserunt a aliquam hic, commodi molestias tenetur ab accusamus illo? Laborum amet perferendis facilis voluptatem incidunt! Suscipit magni voluptatem enim voluptates ?</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ceo__bottom"> 
+                  <ul class="pagy">
+                    <li class="pagy__item"><a class="pagy__link" href="#">Назад</a></li>
+                    <li class="pagy__item"><a class="pagy__link is--active" href="#">1</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">2</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">3</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">4</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">5</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">6</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">7</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">8</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">..</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">24</a></li>
+                    <li class="pagy__item"><a class="pagy__link" href="#">Далее</a></li>
+                  </ul>
+                  <div class="ceo__see">
+                    <div class="ceo__see-title">Показывать на странице</div>
+                    <select class="ceo__see-select">
+                      <option value="50">50</option>
+                      <option value="40">40</option>
+                      <option value="20">20</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="ceo__bar">
+                <div class="interest">
+                  <p class="interest__title">Интересные предложения</p>
+                  <div class="interest__item"><img class="interest__icon" src="https://via.placeholder.com/48x48" alt="">
+                    <div class="interest__text"> 
+                      <p class="interest__name">Lorem.</p>
+                      <p class="interest__num">00 000</p>
+                    </div>
+                  </div>
+                  <div class="interest__item"><img class="interest__icon" src="https://via.placeholder.com/48x48" alt="">
+                    <div class="interest__text"> 
+                      <p class="interest__name">Lorem.</p>
+                      <p class="interest__num">00 000</p>
+                    </div>
+                  </div>
+                  <div class="interest__item"><img class="interest__icon" src="https://via.placeholder.com/48x48" alt="">
+                    <div class="interest__text"> 
+                      <p class="interest__name">Lorem.</p>
+                      <p class="interest__num">00 000</p>
+                    </div>
+                  </div>
+                  <div class="interest__item"><img class="interest__icon" src="https://via.placeholder.com/48x48" alt="">
+                    <div class="interest__text"> 
+                      <p class="interest__name">Lorem.</p>
+                      <p class="interest__num">00 000</p>
+                    </div>
+                  </div>
+                  <div class="interest__item"><img class="interest__icon" src="https://via.placeholder.com/48x48" alt="">
+                    <div class="interest__text"> 
+                      <p class="interest__name">Lorem.</p>
+                      <p class="interest__num">00 000</p>
+                    </div>
+                  </div>
+                  <div class="interest__item"><img class="interest__icon" src="https://via.placeholder.com/48x48" alt="">
+                    <div class="interest__text"> 
+                      <p class="interest__name">Lorem.</p>
+                      <p class="interest__num">00 000</p>
+                    </div>
+                  </div><a class="more-btn h-btn" href="#"><span>Смотреть больше</span>
+                    <svg>
+                      <use xlink:href="./assets/images/svg/sprite.svg#more-arrow"></use>
+                    </svg></a><a class="interest__banner" href="#"><img src="https://via.placeholder.com/317x158" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section consultation"> 
+          <div class="container">
+            <form class="consultation__form">
+              <p class="consultation__title">Бесплатная консультация</p>
+              <div class="consultation__row"> 
+                <p class="consultation__desc">Оставьте заявку или позвоните нам по телефону:</p><a class="consultation__phone" href="tel:+3800808962">+3 (480) 080-89-62</a>
+                <label class="consultation__number">
+                  <div class="consultation__number-desc"><img class="consultation__number-icon" src="assets/images/flag.png" alt="">
+                    <select class="consultation__number-select">
+                      <option value="+34">+34</option>
+                      <option value="+34">+34</option>
+                      <option value="+34">+34</option>
+                    </select>
+                  </div>
+                  <input class="consultation__number-input" type="text" placeholder="(XXX) XX-XX-XX">
+                </label>
+                <input class="consultation__input" type="text" placeholder="Ваше имя - Необязательно">
+                <p class="consultation__polic">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></p>
+                <button class="consultation__btn blue-btn"> 
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#phone"></use>
+                  </svg><span>Заказать консультацию</span>
+                </button>
+              </div>
+            </form>
+            <div class="consultation__man"><img class="consultation__man-icon" src="assets/images/c-man.png" alt="" style="width:125px">
+              <p class="consultation__man-name">Валерий Альбертович</p>
+              <p class="consultation__man-desc">Ваш персональный консультант</p>
+            </div>
+          </div>
+        </section>
+        <section class="section paper"> 
+          <div class="container"><span class="section-title">Продажа квартир в Испании</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod eveniet. Rem sit at inventore tempora nam libero facere ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod eveniet. Rem sit at inventore tempora nam libero facere ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nemo harum exercitationem voluptatem animi dolorem rerum necessitatibus facere, voluptate at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod eveniet. Rem sit at inventore tempora nam libero facere ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, omnis tempora quidem nulla porro soluta distinctio ducimus ad accusamus consequatur fugiat animi architecto dolor quae assumenda nesciunt saepe? Sint, doloribus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit facilis nisi quod delectus provident possimus, sequi similique, ducimus consequuntur neque praesentium soluta repellendus obcaecati aut cupiditate ex quas, repellat commodi. Error nihil modi obcaecati amet corporis, totam similique eligendi cumque aliquid debitis porro consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore tempora deserunt ipsam assumenda, eius sapiente ipsum, saepe odit ut accusantium ducimus veniam sunt eligendi dolor? Porro quidem error sed eum aspernatur nobis vero sunt perferendis dolorum tenetur ducimus cum quos, non necessitatibus ipsa minima ex, voluptatum assumenda voluptas incidunt.</p>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <nav class="footer__container">
+          <div class="footer__col footer-desc"> <a class="footer-desc__logo h-btn" href="#">
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#f-logo"></use>
+              </svg></a>
+            <p class="footer-desc__disclaimer">© 2021 | Anveran.<br>Все права защищены. Копирование разрешается только при наличии <span class="nowrap">ссылки на</span> этот сайт.</p>
+          </div>
+          <div class="footer__col footer-info"> <a class="footer-info__phone h-btn" href="tel:+34800808962">+3 (480) 080-89-62</a>
+            <p class="footer-info__desc">Оставьте заявку или позвоните нам <span class="nowrap">по телефону.</span> Это бесплатно!</p><a class="blue-btn h-btn" href="#">Бесплатный звонок</a>
+          </div>
+          <div class="footer__col footer-menu__wrapper">
+            <p class="footer-menu__title">МЕНЮ</p>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Найти недвижимость</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Избранное</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Контакты</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="assets/js/main.js"></script>
+    </div>
+  </body>
+</html>

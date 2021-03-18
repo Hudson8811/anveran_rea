@@ -1,0 +1,23 @@
+.similar {
+  .actual-desc {
+    margin-bottom: 32px;
+
+    .more-btn {
+      margin-right: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 -8px -16px;
+
+    .actual-card {
+      width: calc(33.333% - 32px / 2);
+      margin: 0 8px 16px;
+      min-width: 280px;
+    }
+  }
+}

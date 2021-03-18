@@ -1,0 +1,52 @@
+.interest{
+    &__title{
+        display: block;
+        @include font-source-sans(20px,false,600,24px);
+    }
+
+    &__item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
+
+    &__icon{
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 4px;
+    }
+
+    &__text{
+        padding-left: 12px;
+    }
+
+    &__name{
+        display: block;
+        margin-bottom: 4px;
+        @include font-source-sans(16px,false,500,20px);
+    }
+
+    &__num{
+        display: block;
+        @include font-source-sans(14px,#909499,false,18px);
+    }
+
+    .more-btn{
+        margin:20px 0 32px;
+    }
+
+    &__banner{
+        display: block;
+        width: 100%;
+        height: auto;
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    }
+}

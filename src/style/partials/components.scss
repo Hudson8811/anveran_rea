@@ -82,24 +82,24 @@
   }
 }
 
-.section-title{
+.section-title {
   display: block;
-  @include font-source-sans(24px, false,500,28px);
+  @include font-source-sans(24px, false, 500, 28px);
 
-  @include mq('tablet'){
-    @include font-source-sans(20px,false,false,24px);
+  @include mq('tablet') {
+    @include font-source-sans(20px, false, false, 24px);
   }
 }
 
-.more-btn{
+.more-btn {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: fit-content;
-  @include font-source-sans(false,#4383FF,false,false);
+  @include font-source-sans(false, #4383ff, false, false);
   text-decoration: none;
 
-  svg{
+  svg {
     display: block;
     width: 16px;
     height: 7px;
@@ -107,15 +107,126 @@
   }
 }
 
-.black-btn{
+.black-btn {
   display: block;
   padding: 10px 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   background: #161718;
   border-radius: 4px;
 
-  @include mq('tablet-small'){
-    @include font-source-sans(12px,false,false,15px);
+  @include mq('tablet-small') {
+    @include font-source-sans(12px, false, false, 15px);
   }
+}
+
+.back-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include font-source-sans(14px, #4383ff, 400, 18px);
+  text-decoration: none;
+
+  svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+}
+
+.pdf-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  @include font-source-sans(14px, #161718, 400, 18px);
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+}
+
+.save-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  @include font-source-sans(14px, #161718, 400, 18px);
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+}
+
+.share-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  @include font-source-sans(14px, #4383ff, 400, 18px);
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+}
+
+.next-btn {
+  position: relative;
+  @include font-source-sans(false, #4383ff, 500, false);
+  text-decoration: none;
+
+  span {
+    border-bottom: 1px dashed #4383ff;
+  }
+
+  &:before {
+    content: '... ';
+    color: #161718;
+  }
+}
+
+.border-btn {
+  display: block;
+  padding: 10px 28px;
+  @include font-source-sans(15px, #4383ff, 500, 20px);
+  background: #ffffff;
+  border: 1px solid #e1e3e6;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.blue-phone-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+
+  &:before {
+    @include pseudo(block, static);
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    background: center / cover url(../images/svg/sprite.svg#blue-phone) no-repeat;
+  }
+}
+
+.details-btn {
+  display: block;
+  @include font-source-sans(14px, #161718, 400, 18px);
+  text-decoration: none;
+  padding: 4px 12px;
+  background: #ffffff;
+  border-radius: 4px;
+  width: fit-content;
 }

@@ -1,0 +1,48 @@
+.pagy{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+
+    &__item{
+        display: block;
+        margin: 0 6px;
+
+        &:first-child{
+            .pagy__link{
+                color: #AAAEB3;
+            }
+
+            @include mq('phablet'){
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        &:last-child{
+            margin-left: 22px;
+
+            @include mq('phablet'){
+                width: 100%;
+                margin-top: 10px;
+                margin-left: 6px;
+            }
+        }
+
+    }
+
+    &__link{
+        display: block;
+        text-decoration: none;
+        @include font-source-sans(14px,#4383FF,400,18px);
+        cursor: pointer;
+
+        &.is--active{
+            padding: 6px 10px;
+            @include font-source-sans(false,#fff,700,false);
+            background: #4383FF;
+            border-radius: 4px;
+        }
+    }
+}

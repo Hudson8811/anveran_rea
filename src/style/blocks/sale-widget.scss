@@ -1,0 +1,60 @@
+.sale-widget {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: radial-gradient(94.95% 179.62% at -9.78% 122.08%, #ffc27b 0%, #ff6f32 100%);
+  box-shadow: 0px 3px 20px -7px rgba(255, 117, 55, 0.72);
+  border-radius: 4px;
+  padding: 12px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+
+    svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__text {
+    padding-left: 12px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 4px;
+    @include font-source-sans(16px, #fff, 500, 20px);
+  }
+
+  &__desc {
+    display: block;
+    margin-bottom: 14px;
+    @include font-source-sans(12px, #fff, 500, 16px);
+    opacity: 0.7;
+  }
+
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

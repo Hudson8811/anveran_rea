@@ -1,0 +1,13 @@
+.interest
+    p.interest__title Интересные предложения
+    - for (var i = 0; i < 6; i++)
+        .interest__item
+            img.interest__icon(src="https://via.placeholder.com/48x48", alt="")
+            .interest__text 
+                p.interest__name Lorem.
+                p.interest__num 00 000
+        
+    +more-btn('Смотреть больше')
+
+    a.interest__banner(href="#")
+        img(src="https://via.placeholder.com/317x158", alt="")

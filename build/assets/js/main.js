@@ -92,32 +92,97 @@ $(document).ready(function(){
       e.preventDefault;
       $(this).toggleClass('is--active')
     })
+
+    $('.card-content__slider-main').slick({
+      infinite:false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.card-content__slider-sub'
+    })
+
+    $('.card-content__slider-sub').slick({
+      infinite:false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.card-content__slider-main',
+      arrows: false,
+      focusOnSelect: true
+    })
+
+    const items = $('.card-content__slider-main__item').length
+    const alItems = $('.card-content__slider-dote__last')
+    alItems.html(items)
+
+    $('.card-content__slider-main').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      const currentItems = $('.card-content__slider-dote__first')
+      currentItems.html(nextSlide + 1)
+    });
+
+    $('.next-btn').click(function(e){
+      e.preventDefault()
+      $(this).hide()
+      $(this).siblings('.card-content__characteristics-desc-hide').show()
+    })
 })
 
-ymaps.ready(function () {
-  var myMap = new ymaps.Map('imap', {
-          center: [55.751574, 37.573856],
-          zoom: 12,
-          controls: []
-      }, {
-          searchControlProvider: 'yandex#search'
-      }),
+if($('.wrapper').hasClass('search-page')){
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('imap', {
+            center: [55.751574, 37.573856],
+            zoom: 12,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+  
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'assets/images/svg/sprite.svg#imap-icon',
+            // Размеры метки.
+            iconImageSize: [100, 100],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-50, -50]
+        })
+  
+    myMap.geoObjects
+        .add(myPlacemark)
+  });
+}
 
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Собственный значок метки'
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: 'assets/images/svg/sprite.svg#imap-icon',
-          // Размеры метки.
-          iconImageSize: [100, 100],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-50, -50]
-      })
-
-  myMap.geoObjects
-      .add(myPlacemark)
-});
+if($('.wrapper').hasClass('card-page')){
+  ymaps.ready(function () {
+    var myMapC = new ymaps.Map('cmap', {
+            center: [55.751574, 37.573856],
+            zoom: 12,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+  
+        myPlacemarkC = new ymaps.Placemark(myMapC.getCenter(), {
+            hintContent: 'Собственный значок метки'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'assets/images/svg/sprite.svg#cmap-icon',
+            // Размеры метки.
+            iconImageSize: [150, 150],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-75, -150]
+        })
+  
+    myMapC.geoObjects
+        .add(myPlacemarkC)
+  });
+}
