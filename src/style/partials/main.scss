@@ -51,6 +51,35 @@ body {
   }
 }
 
-.card-page .ceo__bar {
-  padding-top: 0;
+.ceo-page .ceo__bar {
+  padding-top: 57px;
+}
+
+.paper-page {
+  .ceo__content {
+    width: calc(100% - 291px - 48px - 337px);
+
+    @include mq('desktop') {
+      width: calc(100% - 337px);
+    }
+
+    @include mq('tablet-wide') {
+      width: 100%;
+    }
+  }
+
+  .ceo__content,
+  .ceo__bar {
+    padding-top: 70px;
+  }
+}
+
+.paper-heading {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
 }

@@ -1,0 +1,51 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'Paper page',
+		class: 'paper-page'
+		};
+
+block main
+	include blocks/crumbs
+	.container
+		.ceo__wrapper
+			include blocks/paper-list
+
+			.ceo__content
+				.paper-heading__wrapper
+					.paper-heading
+						include blocks/rating
+						.card-info__tags
+							.card-info__tags-item Статьи
+							.card-info__tags-item Путешествия
+					+share-btn('Поделиться')
+				.paper-content._introduction
+					+big-title('Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sequi veritatis laudantium quo.')
+					img.card-content__characteristics-banner(src="https://via.placeholder.com/654x400", alt="")
+					p.card-content__characteristics-desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugit consequatur libero ratione quia officia at dolores harum eum nisi animi accusantium maiores deleniti, beatae suscipit assumenda voluptatem odio sunt?
+					._passport
+						include blocks/warning
+					.paper-content__info._info
+						p.card-content__characteristics-title Полезная информация
+
+						ul.paper-content__list 
+							-for (var i=0;i<4;i++)
+								li.paper-content__item Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, atque.
+					._description
+						p.card-content__characteristics-title Lorem ipsum dolor sit.
+						p.card-content__characteristics-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis suscipit blanditiis et magni impedit eius! Reiciendis quaerat a officiis consequuntur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, voluptates quisquam nisi enim earum. 
+						p.card-content__characteristics-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, delectus.
+					include blocks/resort
+					.paper-content__info
+						p.card-content__characteristics-title Lorem-ipsum-dolor.
+						img.card-content__characteristics-banner(src="https://via.placeholder.com/654x200", alt="")
+						p.card-content__characteristics-desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sapiente.
+					
+					+description('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos numquam, iusto dolores assumenda ab molestiae cupiditate? Consectetur, et aspernatur! Provident magnam rem quae dolorum iure quibusdam inventore, quaerat nulla ullam distinctio vel repudiandae optio necessitatibus sapiente autem porro nihil minima?')
+					include blocks/appraisal
+					include blocks/social
+					include blocks/offers
+			.ceo__bar
+				include blocks/price-widget

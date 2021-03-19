@@ -1,0 +1,52 @@
+.warning {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #d81f1b;
+  border-radius: 4px;
+  padding: 20px;
+
+  @include mq('tablet') {
+    padding: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__text {
+    padding-left: 16px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 8px;
+    @include font-source-sans(24px, #fff, 500, 28px);
+
+    @include mq('tablet') {
+      @include font-source-sans(18px, false, false, 22px);
+    }
+  }
+
+  &__desc {
+    display: block;
+    @include font-source-sans(16px, #fff, 500, 20px);
+
+    @include mq('tablet') {
+      @include font-source-sans(12px, false, false, 16px);
+    }
+  }
+}

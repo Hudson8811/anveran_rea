@@ -1,0 +1,10 @@
+.appraisal
+    p.card-content__characteristics-title Оцените статью
+    p.appraisal-desc Полезен ли данный материал?
+    ul.appraisal-stars 
+        -for(var x=0;x<4;x++)
+            li.appraisal-stars__item 
+                +svg('star')
+
+        li.appraisal-stars__item 
+                +svg('des-star')

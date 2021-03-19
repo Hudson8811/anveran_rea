@@ -1,0 +1,33 @@
+.paper-list {
+  position: sticky;
+  top: var(--header-height);
+  padding-top: 20px;
+  width: 291px;
+  margin-right: 48px;
+
+  @include mq('desktop') {
+    display: none;
+  }
+
+  &__item {
+    display: block;
+
+    &:first-child {
+      margin-bottom: 32px;
+    }
+
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    @include font-source-sans(14px, #aaaeb3, 500, 18px);
+
+    &.is--active {
+      color: #161718;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.resort {
+  margin: 24px 0 48px;
+
+  .card-content__characteristics-desc {
+    margin-bottom: 0;
+  }
+
+  .slick-next {
+    right: -30px;
+    z-index: 3;
+    @include centering-y;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff center/auto url(../images/svg/sprite.svg#slide_arrow) no-repeat;
+    cursor: pointer;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.08);
+
+    @include mq('tablet-wide') {
+      right: 0;
+    }
+  }
+
+  .slick-prev {
+    display: none !important;
+  }
+
+  &__slider {
+    margin: 0 0 16px;
+  }
+
+  &__item {
+    display: block;
+    width: 280px;
+    margin: 0 4px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -1,0 +1,40 @@
+.paper-content {
+  padding-bottom: 60px;
+
+  .card-content__characteristics-title {
+    margin-bottom: 16px;
+  }
+
+  .card-content__characteristics-desc:last-child {
+    margin-bottom: 0;
+  }
+
+  .big-title {
+    margin-bottom: 50px;
+  }
+
+  &__info {
+    margin-top: 48px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    padding-left: 12px;
+
+    &:before {
+      @include pseudo;
+      width: 4px;
+      height: 4px;
+      top: 8px;
+      left: 0;
+      background: #161718;
+      border-radius: 50%;
+    }
+  }
+}

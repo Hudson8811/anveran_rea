@@ -64,6 +64,14 @@ $(document).ready(function(){
           ]
     })
 
+    $('.resort__slider').slick({
+      infinite: false,
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      variableWidth: true,
+  })
+
     $('.actual-card__slider').slick({
         infinite: false,
         arrows: false,
@@ -118,6 +126,41 @@ $(document).ready(function(){
       e.preventDefault()
       $(this).hide()
       $(this).siblings('.card-content__characteristics-desc-hide').show()
+    })
+
+ 
+    $('.anchor').click(function(e){
+        e.preventDefault
+        $('.paper-list__link').removeClass('is--active')
+        $(this).addClass('is--active')
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top - $('.header').innerHeight()}, 1000);
+        return false;
+    });
+
+    $(window).scroll(function(){
+      if($('.wrapper').hasClass('paper-page')){
+        let pos1 = $('._introduction').offset().top - 2*$('.header').innerHeight()
+        let pos2 = $('._passport').offset().top - 2*$('.header').innerHeight()
+        let pos3 = $('._info').offset().top - 2*$('.header').innerHeight()
+        let pos4 = $('._description').offset().top - 2*$('.header').innerHeight()
+        if (pos1 <= $(window).scrollTop()){
+          $('.paper-list__link').removeClass('is--active')
+          $('.paper-list__link[href="._introduction"]').addClass('is--active')
+        }
+        if (pos2 <= $(window).scrollTop()){
+          $('.paper-list__link').removeClass('is--active')
+          $('.paper-list__link[href="._passport"]').addClass('is--active')
+        }
+        if (pos3 <= $(window).scrollTop()){
+          $('.paper-list__link').removeClass('is--active')
+          $('.paper-list__link[href="._info"]').addClass('is--active')
+        }
+        if (pos4 <= $(window).scrollTop()){
+          $('.paper-list__link').removeClass('is--active')
+          $('.paper-list__link[href="._description"]').addClass('is--active')
+        }
+      }
     })
 })
 

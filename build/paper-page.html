@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <title>Paper page</title>
+  </head>
+  <body>
+    <div class="wrapper paper-page">
+      <header class="header"> 
+        <nav class="container header__container"><a class="header__logo h-btn" href="#"> 
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#logo"></use>
+            </svg></a><a class="header__location" href="#">
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#location"></use>
+            </svg><span>Мадрид</span></a>
+          <ul class="header-menu">
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Апартаменты и квартиры</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Продажа</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Таунхаусы и бунгало</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Виллы и дома</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Статьи</a></li>
+          </ul>
+          <select class="header__lang">
+            <option value="ru">ru</option>
+            <option value="eu">eu</option>
+            <option value="dg">dg</option>
+          </select>
+          <div class="h-favorites"><a class="h-favorites__icon" href="#"> 
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#favorites"></use>
+              </svg><span>2</span></a>
+            <div class="h-favorites__content"></div>
+          </div><a class="login-btn h-btn" href="#">Войти в аккаунт</a>
+          <div class="burger h-btn"> 
+            <div></div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="crumbs"> 
+          <div class="container"> 
+            <ul class="crumbs__content"> 
+              <li class="crumbs__item"> <a class="crumbs__link" href="#">Главная /</a></li>
+              <li class="crumbs__item"> <a class="crumbs__link" href="#">Недвижимость</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="container">
+          <div class="ceo__wrapper">
+            <ul class="paper-list">
+              <li class="paper-list__item"> <a class="back-btn h-btn" href="#">
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#back-btn"></use>
+                  </svg><span>Назад ко всем статьям</span></a>
+              </li>
+              <li class="paper-list__item"><a class="paper-list__link anchor is--active" href="._introduction">Вступление</a></li>
+              <li class="paper-list__item"><a class="paper-list__link anchor" href="._passport">Помните о паспорте!</a></li>
+              <li class="paper-list__item"><a class="paper-list__link anchor" href="._info">Полезная информация</a></li>
+              <li class="paper-list__item"><a class="paper-list__link anchor" href="._description">Краткое описание курортов Испании</a></li>
+            </ul>
+            <div class="ceo__content">
+              <div class="paper-heading__wrapper">
+                <div class="paper-heading">
+                  <div class="rating">
+                    <div class="rating__wrapper"> 
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#star"></use>
+                      </svg><span class="rating__num">4.4 </span>
+                    </div>
+                    <div class="rating__date"><span>9 марта 2021</span></div>
+                  </div>
+                  <div class="card-info__tags">
+                    <div class="card-info__tags-item">Статьи</div>
+                    <div class="card-info__tags-item">Путешествия</div>
+                  </div>
+                </div><a class="pdf-btn h-btn" href="#">
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#link"></use>
+                  </svg><span>Поделиться</span></a>
+              </div>
+              <div class="paper-content _introduction">
+                <p class="big-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sequi veritatis laudantium quo.</p><img class="card-content__characteristics-banner" src="https://via.placeholder.com/654x400" alt="">
+                <p class="card-content__characteristics-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugit consequatur libero ratione quia officia at dolores harum eum nisi animi accusantium maiores deleniti, beatae suscipit assumenda voluptatem odio sunt?</p>
+                <div class="_passport">
+                  <div class="warning"> 
+                    <div class="warning__icon"> 
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#warning"></use>
+                      </svg>
+                    </div>
+                    <div class="warning__text"> 
+                      <p class="warning__title">Помните о паспорте!</p>
+                      <p class="warning__desc">Носите с собой удостоверение личности (ксерокопия паспорта вариант приемлемый и безопасный – главное, чтобы была копия страниц с фото и визой, а если заверить это дело в отеле – цены не будет!).</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="paper-content__info _info">
+                  <p class="card-content__characteristics-title">Полезная информация</p>
+                  <ul class="paper-content__list"> 
+                    <li class="paper-content__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, atque.</li>
+                    <li class="paper-content__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, atque.</li>
+                    <li class="paper-content__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, atque.</li>
+                    <li class="paper-content__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, atque.</li>
+                  </ul>
+                </div>
+                <div class="_description">
+                  <p class="card-content__characteristics-title">Lorem ipsum dolor sit.</p>
+                  <p class="card-content__characteristics-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis suscipit blanditiis et magni impedit eius! Reiciendis quaerat a officiis consequuntur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, voluptates quisquam nisi enim earum. </p>
+                  <p class="card-content__characteristics-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, delectus.</p>
+                </div>
+                <div class="resort">
+                  <div class="card-content__characteristics-title">Lorem-ipsum</div>
+                  <div class="resort__slider">
+                    <div class="resort__item"> <img class="resort__img" src="https://via.placeholder.com/280x200" alt=""></div>
+                    <div class="resort__item"> <img class="resort__img" src="https://via.placeholder.com/280x200" alt=""></div>
+                    <div class="resort__item"> <img class="resort__img" src="https://via.placeholder.com/280x200" alt=""></div>
+                    <div class="resort__item"> <img class="resort__img" src="https://via.placeholder.com/280x200" alt=""></div>
+                    <div class="resort__item"> <img class="resort__img" src="https://via.placeholder.com/280x200" alt=""></div>
+                  </div>
+                  <p class="card-content__characteristics-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a hic eligendi omnis. Illo quibusdam exercitationem, labore ex assumenda quod maxime laboriosam velit sed quas. Deserunt veritatis consectetur veniam optio consequuntur, laborum odit similique perspiciatis error natus repellat sit esse unde vero officiis placeat quidem repellendus id? Animi, temporibus ratione!</p>
+                </div>
+                <div class="paper-content__info">
+                  <p class="card-content__characteristics-title">Lorem-ipsum-dolor.</p><img class="card-content__characteristics-banner" src="https://via.placeholder.com/654x200" alt="">
+                  <p class="card-content__characteristics-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sapiente.</p>
+                </div>
+                <div class="description"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos numquam, iusto dolores assumenda ab molestiae cupiditate? Consectetur, et aspernatur! Provident magnam rem quae dolorum iure quibusdam inventore, quaerat nulla ullam distinctio vel repudiandae optio necessitatibus sapiente autem porro nihil minima?</span></div>
+                <div class="appraisal">
+                  <p class="card-content__characteristics-title">Оцените статью</p>
+                  <p class="appraisal-desc">Полезен ли данный материал?</p>
+                  <ul class="appraisal-stars"> 
+                    <li class="appraisal-stars__item"> 
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="appraisal-stars__item"> 
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="appraisal-stars__item"> 
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="appraisal-stars__item"> 
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="appraisal-stars__item"> 
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#des-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <div class="social">
+                  <p class="social__title">Поделиться статьей:</p><a class="social__link" href="#">
+                    <svg>
+                      <use xlink:href="./assets/images/svg/sprite.svg#social-icon1"></use>
+                    </svg></a><a class="social__link" href="#">
+                    <svg>
+                      <use xlink:href="./assets/images/svg/sprite.svg#social-icon2"></use>
+                    </svg></a><a class="social__link" href="#">
+                    <svg>
+                      <use xlink:href="./assets/images/svg/sprite.svg#social-icon3"></use>
+                    </svg></a><a class="social__link" href="#">
+                    <svg>
+                      <use xlink:href="./assets/images/svg/sprite.svg#social-icon4"></use>
+                    </svg></a><a class="social__link" href="#">
+                    <svg>
+                      <use xlink:href="./assets/images/svg/sprite.svg#social-icon5"></use>
+                    </svg></a>
+                </div>
+                <div class="offers">
+                  <div class="offers__heading"> <span class="section-title">Может быть интересно</span><a class="more-btn h-btn" href="#"><span>Посмотреть все</span>
+                      <svg>
+                        <use xlink:href="./assets/images/svg/sprite.svg#more-arrow"></use>
+                      </svg></a>
+                  </div>
+                  <div class="offers__content"><a class="materials__item is--long" style="background-image: url(https://via.placeholder.com/654x317);" href="#">
+                      <div class="materials__text"> 
+                        <p class="materials__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</p><span class="materials__tag">YouTube</span>
+                      </div></a><a class="materials__item" style="background-image: url(https://via.placeholder.com/317x317);" href="#">
+                      <div class="materials__text"> 
+                        <p class="materials__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</p><span class="materials__tag">YouTube</span>
+                      </div></a><a class="materials__item" style="background-image: url(https://via.placeholder.com/317x317);" href="#">
+                      <div class="materials__text"> 
+                        <p class="materials__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</p><span class="materials__tag">YouTube</span>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="ceo__bar">
+              <div class="price-widget"> 
+                <div class="price-widget__row">
+                  <p class="price-widget__title">Цена продажи</p>
+                  <select class="price-widget__select">
+                    <option value="€">€</option>
+                    <option value="$">$</option>
+                    <option value="p">p</option>
+                  </select>
+                </div>
+                <div class="actual-card__price-wrapper"> 
+                  <p class="actual-card__price">€00 000</p>
+                  <p class="actual-card__price-before">€00 000</p>
+                </div>
+                <div class="actual-card__square">€000/м<sup>2</sup></div>
+                <div class="price-widget__disclamer">
+                  <svg>
+                    <use xlink:href="./assets/images/svg/sprite.svg#disclamer"></use>
+                  </svg><span>Стоимость объекта без учета налогов</span>
+                </div><a class="blue-btn h-btn" href="#">Получить консультацию</a><a class="border-btn h-btn" href="#"><span>Записаться на online-просмотр</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <nav class="footer__container">
+          <div class="footer__col footer-desc"> <a class="footer-desc__logo h-btn" href="#">
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#f-logo"></use>
+              </svg></a>
+            <p class="footer-desc__disclaimer">© 2021 | Anveran.<br>Все права защищены. Копирование разрешается только при наличии <span class="nowrap">ссылки на</span> этот сайт.</p>
+          </div>
+          <div class="footer__col footer-info"> <a class="footer-info__phone h-btn" href="tel:+34800808962">+3 (480) 080-89-62</a>
+            <p class="footer-info__desc">Оставьте заявку или позвоните нам <span class="nowrap">по телефону.</span> Это бесплатно!</p><a class="blue-btn h-btn" href="#">Бесплатный звонок</a>
+          </div>
+          <div class="footer__col footer-menu__wrapper">
+            <p class="footer-menu__title">МЕНЮ</p>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Найти недвижимость</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Избранное</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Контакты</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="assets/js/main.js"></script>
+    </div>
+  </body>
+</html>

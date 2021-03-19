@@ -1,0 +1,46 @@
+.appraisal {
+  margin: 60px 0;
+  overflow: hidden;
+
+  .card-content__characteristics-title {
+    margin-bottom: 8px;
+  }
+
+  &-desc {
+    display: block;
+    color: #909499;
+  }
+
+  &-stars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 32px -23px -23px;
+
+    @include mq('tablet') {
+      margin: 10px -10px -10px;
+    }
+
+    &__item {
+      display: block;
+      margin: 0 23px 23px;
+      cursor: pointer;
+
+      @include mq('tablet') {
+        margin: 0 10px 10px;
+      }
+
+      svg {
+        display: block;
+        width: 60px;
+        height: 60px;
+
+        @include mq('tablet') {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

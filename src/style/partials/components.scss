@@ -230,3 +230,24 @@
   border-radius: 4px;
   width: fit-content;
 }
+
+.big-title {
+  display: block;
+  @include font-source-sans(32px, false, 600, 40px);
+
+  @include mq('tablet') {
+    @include font-source-sans(24px, false, false, 30px);
+  }
+}
+
+.description {
+  display: block;
+  padding: 16px;
+  background: #f9f9f9;
+  border-left: 4px solid #909499;
+
+  span {
+    display: block;
+    @include font-source-sans(14px, #7f8285, 400, 18px);
+  }
+}

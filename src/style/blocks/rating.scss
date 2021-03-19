@@ -1,0 +1,40 @@
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    svg {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 4px;
+    }
+  }
+
+  &__num {
+    display: block;
+    @include font-source-sans(14px, false, 500, 18px);
+  }
+
+  &__date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6px;
+    @include font-source-sans(14px, #aaaeb3, 500, 18px);
+
+    &:before {
+      @include pseudo(false, static);
+      background: #aaaeb3;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+  }
+}
