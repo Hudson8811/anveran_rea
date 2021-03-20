@@ -72,6 +72,11 @@ body {
   .ceo__bar {
     padding-top: 70px;
   }
+
+  .scroll-top-btn {
+    bottom: 820px;
+    right: 130px;
+  }
 }
 
 .paper-heading {
@@ -81,5 +86,48 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 16px;
+  }
+}
+
+.favorites-page {
+  .ceo__content {
+    padding-top: 32px;
+
+    .big-title {
+      margin-bottom: 16px;
+    }
+  }
+
+  .ceo__bar {
+    padding-top: 133px;
+  }
+}
+
+.papers-page {
+  .big-title {
+    padding-top: 32px;
+    margin-bottom: 32px;
+  }
+  .ceo__wrapper {
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+  }
+
+  .ceo__content {
+    width: calc(100% - 291px - 48px - 337px);
+
+    @include mq('desktop') {
+      width: calc(100% - 337px);
+    }
+
+    @include mq('tablet-wide') {
+      width: 100%;
+    }
+  }
+
+  .ceo__bar {
+    .section-title {
+      margin-bottom: 16px;
+    }
   }
 }

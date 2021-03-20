@@ -1,0 +1,15 @@
+ul.papers-menu
+    li.papers-menu__item
+        a.papers-menu__link.is--active(href="#") Все темы
+    each val in ['Путешествия','Виза','ПМЖ','YouTube','Instagram']
+        li.papers-menu__item
+            a.papers-menu__link(href="#")= val
+    
+    each val in ['Путешествия','Виза','ПМЖ','YouTube','Instagram']
+        li.papers-menu__item.is--disabled
+            a.papers-menu__link(href="#")= val
+    
+    li.papers-menu__item
+            a.papers-menu__link.papers-menu__link--more(href="#") 
+                span Другие темы (5)
+                +svg('scroll-top')

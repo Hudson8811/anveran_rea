@@ -1,0 +1,13 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'About company page',
+		class: 'about-company-page'
+		};
+
+block main
+	include blocks/crumbs
+	include blocks/a-company
+	include blocks/consultation

@@ -135,7 +135,7 @@ $(document).ready(function(){
     })
 
  
-    $('.anchor').click(function(e){
+    $('.paper-list__link').click(function(e){
         e.preventDefault
         $('.paper-list__link').removeClass('is--active')
         $(this).addClass('is--active')
@@ -144,7 +144,15 @@ $(document).ready(function(){
         return false;
     });
 
-    $(window).scroll(function(){
+    $('.scroll-top-btn').click(function(e){
+      e.preventDefault
+      $('html, body').animate({scrollTop: $('.wrapper').offset().top}, 1000);
+      return false;
+  });
+
+
+
+  $(window).scroll(function(){
       if($('.wrapper').hasClass('paper-page')){
         let pos1 = $('._introduction').offset().top - 2*$('.header').innerHeight()
         let pos2 = $('._passport').offset().top - 2*$('.header').innerHeight()
@@ -167,13 +175,19 @@ $(document).ready(function(){
           $('.paper-list__link[href="._description"]').addClass('is--active')
         }
       }
-    })
+  })
+
+  $('.papers-menu__link--more').click(function(e){
+    e.preventDefault
+    $(this).toggleClass('is--down')
+    $('.papers-menu__item.is--disabled').slideToggle(200)
+  })
 })
 
 if($('.wrapper').hasClass('search-page')){
   ymaps.ready(function () {
     var myMap = new ymaps.Map('imap', {
-            center: [55.751574, 37.573856],
+            center: [37.978620, -0.683537],
             zoom: 12,
             controls: []
         }, {
@@ -203,7 +217,7 @@ if($('.wrapper').hasClass('search-page')){
 if($('.wrapper').hasClass('card-page')){
   ymaps.ready(function () {
     var myMapC = new ymaps.Map('cmap', {
-            center: [55.751574, 37.573856],
+            center: [37.978620, -0.683537],
             zoom: 12,
             controls: []
         }, {
@@ -227,5 +241,22 @@ if($('.wrapper').hasClass('card-page')){
   
     myMapC.geoObjects
         .add(myPlacemarkC)
+  });
+}
+
+if($('.wrapper').hasClass('contacts-page')){
+  ymaps.ready(function () {
+    var myMapCo = new ymaps.Map('contacts__map', {
+            center: [37.978620, -0.683537],
+            zoom: 12,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        })
+      myMapCo.geoObjects.add(new ymaps.Placemark([37.978620, -0.683537], {
+    }, {
+        preset: 'islands#icon',
+        iconColor: '#D81F1B'
+    }))
   });
 }

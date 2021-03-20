@@ -1,0 +1,41 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'Papers page',
+		class: 'papers-page'
+		};
+
+block main
+	include blocks/crumbs
+	.container
+		+big-title('Полезные материалы')
+		.ceo__wrapper
+			include blocks/papers-menu
+			.ceo__content
+				.offers__content
+					a.materials__item.is--big(style="background-image: url(https://via.placeholder.com/654x654);", href="#")
+						.materials__text 
+							p.materials__title Lorem, ipsum dolor sit amet consectetur adipisicing.
+							span.materials__tag YouTube
+					
+					a.materials__item.is--long(style="background-image: url(https://via.placeholder.com/654x317);", href="#")
+						.materials__text 
+							p.materials__title Lorem, ipsum dolor sit amet consectetur adipisicing.
+							span.materials__tag YouTube
+					
+					a.materials__item(style="background-image: url(https://via.placeholder.com/317x317);", href="#")
+						.materials__text 
+							p.materials__title Lorem, ipsum dolor sit amet consectetur adipisicing.
+							span.materials__tag YouTube
+					
+					a.materials__item(style="background-image: url(https://via.placeholder.com/317x317);", href="#")
+						.materials__text 
+							p.materials__title Lorem, ipsum dolor sit amet consectetur adipisicing.
+							span.materials__tag YouTube
+
+			.ceo__bar
+				+title('Интересные статьи')
+				include blocks/paps-widget
+				include blocks/paps-widget

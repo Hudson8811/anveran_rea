@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <title>Сontacts page</title>
+  </head>
+  <body>
+    <div class="wrapper contacts-page">
+      <header class="header"> 
+        <nav class="container header__container"><a class="header__logo h-btn" href="#"> 
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#logo"></use>
+            </svg></a><a class="header__location" href="#">
+            <svg>
+              <use xlink:href="./assets/images/svg/sprite.svg#location"></use>
+            </svg><span>Мадрид</span></a>
+          <ul class="header-menu">
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Апартаменты и квартиры</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Продажа</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Таунхаусы и бунгало</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Виллы и дома</a></li>
+            <li class="header-menu__item"> <a class="header-menu__link h-btn" href="#">Статьи</a></li>
+          </ul>
+          <select class="header__lang">
+            <option value="ru">ru</option>
+            <option value="eu">eu</option>
+            <option value="dg">dg</option>
+          </select>
+          <div class="h-favorites"><a class="h-favorites__icon" href="#"> 
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#favorites"></use>
+              </svg><span>2</span></a>
+            <div class="h-favorites__content"></div>
+          </div><a class="login-btn h-btn" href="#">Войти в аккаунт</a>
+          <div class="burger h-btn"> 
+            <div></div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="crumbs"> 
+          <div class="container"> 
+            <ul class="crumbs__content"> 
+              <li class="crumbs__item"> <a class="crumbs__link" href="#">Главная /</a></li>
+              <li class="crumbs__item"> <a class="crumbs__link" href="#">Недвижимость</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="contacts">
+          <div class="container"> 
+            <p class="big-title">Контакты</p>
+            <div class="contacts__wrapper"> 
+              <div class="contacts__map"> 
+                <div id="contacts__map"></div>
+              </div>
+              <div class="contacts__desc"><span class="section-title">Вы можете связаться с нами удобным для Вас способом:</span><a class="contacts__phone" href="tel:+34800808962">+3 (480) 080-89-62</a>
+                <div class="contacts__links">
+                  <div class="contacts__col"> <span class="contacts__col-title">Звонки по России:</span><a class="contacts__col-link" href="tel:+79587617662">+7 (958) 761-76-62</a></div>
+                  <div class="contacts__col"> <span class="contacts__col-title">Электронная почта:</span><a class="contacts__col-link" href="mailto:info@anveran.com">info@anveran.com</a></div>
+                </div>
+                <div class="contacts__adress">Calle Vicente Blasco Ibáñez, 126, bajo 1, 03182 Torrevieja, Alicante</div>
+                <div class="consul-widget consul-small-widget">
+                  <p class="consul-widget__desc">Или оставьте ваш номер, и я вам перезвоню</p>
+                  <label class="consultation__number">
+                    <div class="consultation__number-desc"><img class="consultation__number-icon" src="assets/images/flag.png" alt="">
+                      <select class="consultation__number-select">
+                        <option value="+34">+34</option>
+                        <option value="+34">+34</option>
+                        <option value="+34">+34</option>
+                      </select>
+                    </div>
+                    <input class="consultation__number-input" type="text" placeholder="(XXX) XX-XX-XX">
+                  </label><a class="login-btn blue-phone-btn h-btn" href="#">Заказать звонок</a>
+                  <p class="consultation__polic">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=c3b0db88-afa3-49b1-b1e6-f545d8be8b91&amp;lang=ru_RU" type="text/javascript"></script>
+      </main>
+      <footer class="footer">
+        <nav class="footer__container">
+          <div class="footer__col footer-desc"> <a class="footer-desc__logo h-btn" href="#">
+              <svg>
+                <use xlink:href="./assets/images/svg/sprite.svg#f-logo"></use>
+              </svg></a>
+            <p class="footer-desc__disclaimer">© 2021 | Anveran.<br>Все права защищены. Копирование разрешается только при наличии <span class="nowrap">ссылки на</span> этот сайт.</p>
+          </div>
+          <div class="footer__col footer-info"> <a class="footer-info__phone h-btn" href="tel:+34800808962">+3 (480) 080-89-62</a>
+            <p class="footer-info__desc">Оставьте заявку или позвоните нам <span class="nowrap">по телефону.</span> Это бесплатно!</p><a class="blue-btn h-btn" href="#">Бесплатный звонок</a>
+          </div>
+          <div class="footer__col footer-menu__wrapper">
+            <p class="footer-menu__title">МЕНЮ</p>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Найти недвижимость</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Избранное</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">Контакты</a></li>
+              <li class="footer-menu__item"> <a class="footer-menu__link h-btn" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="assets/js/main.js"></script>
+    </div>
+  </body>
+</html>

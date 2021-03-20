@@ -1,0 +1,21 @@
+.contacts
+    .container 
+        +big-title('Контакты')
+
+        .contacts__wrapper 
+            .contacts__map 
+                #contacts__map
+            .contacts__desc
+                +title('Вы можете связаться с нами удобным для Вас способом:')
+                a.contacts__phone(href="tel:+34800808962") +3 (480) 080-89-62
+                .contacts__links
+                    .contacts__col 
+                        span.contacts__col-title Звонки по России:
+                        a.contacts__col-link(href="tel:+79587617662") +7 (958) 761-76-62
+                    
+                    .contacts__col 
+                        span.contacts__col-title Электронная почта:
+                        a.contacts__col-link(href="mailto:info@anveran.com") info@anveran.com
+                .contacts__adress Calle Vicente Blasco Ibáñez, 126, bajo 1, 03182 Torrevieja, Alicante
+
+                include consul-small-widget
