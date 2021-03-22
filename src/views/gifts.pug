@@ -1,0 +1,15 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'Gifts page',
+		class: 'gifts-page'
+		};
+
+block main
+	include blocks/crumbs
+	include blocks/loyalty
+	.container
+		section.gifts-desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid asperiores consequatur fugiat nobis distinctio quas odio et itaque est!
+	include blocks/certificates

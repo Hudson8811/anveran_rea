@@ -515,6 +515,18 @@ body {
   line-height: 18px;
   text-decoration: none; }
 
+.gifts-desc {
+  display: block;
+  padding: 32px;
+  margin: 32px 0;
+  background: #f9f9f9;
+  border-radius: 4px;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #7f8285;
+  font-weight: 500;
+  line-height: 18px; }
+
 .header {
   position: fixed;
   left: 0;
@@ -4014,3 +4026,190 @@ body {
   .consul-small-widget .consul-widget__desc,
   .consul-small-widget .consultation__polic {
     text-align: left; }
+
+.loyalty {
+  padding: 60px 0 50px;
+  background: center/cover url(../images/loyalty.jpg) no-repeat; }
+  .loyalty__desc {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase; }
+  .loyalty .big-title {
+    max-width: 630px;
+    margin-bottom: 40px;
+    color: #fff; }
+    @media only screen and (max-width: 767px) {
+      .loyalty .big-title span.nowrap {
+        white-space: normal; } }
+  .loyalty .blue-btn {
+    padding: 10px 54px;
+    font-weight: 400; }
+
+.certificates {
+  padding-bottom: 60px; }
+  .certificates .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .certificates__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-bottom: -20px;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media only screen and (max-width: 767px) {
+      .certificates__row {
+        width: 100%;
+        margin-right: 0; } }
+    .certificates__row:nth-child(2n) {
+      margin-right: 0; }
+    @media only screen and (max-width: 767px) {
+      .certificates__row:first-child {
+        margin-bottom: 0; } }
+    .certificates__row:first-child .certificates__item {
+      width: 100%;
+      margin-right: 0; }
+      .certificates__row:first-child .certificates__item:before {
+        top: auto;
+        bottom: 0;
+        height: 247px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0)));
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        opacity: 0.9;
+        border-radius: 0px 0px 4px 4px; }
+        @media only screen and (max-width: 767px) {
+          .certificates__row:first-child .certificates__item:before {
+            height: 100%;
+            background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(image.png);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image.png);
+            border-radius: 4px; } }
+    .certificates__row:first-child .certificates__title {
+      font-family: 'Inter', Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      line-height: 28px; }
+      @media only screen and (max-width: 559px) {
+        .certificates__row:first-child .certificates__title {
+          font-family: 'Inter', Helvetica, Arial, sans-serif;
+          font-size: 20px;
+          line-height: 24px; } }
+  .certificates__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 191px; }
+    @media only screen and (max-width: 559px) {
+      .certificates__item {
+        width: 100%;
+        margin-right: 0; } }
+    .certificates__item:nth-child(2n) {
+      margin-right: 0; }
+    .certificates__item:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(image.png);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image.png);
+      border-radius: 4px; }
+  .certificates__tag {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: auto;
+    padding: 6px 12px;
+    background: rgba(22, 23, 24, 0.5);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    border-radius: 4px;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 18px; }
+  .certificates__title {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px; }
+  .certificates__desc {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-bottom: 41px;
+    color: rgba(255, 255, 255, 0.8); }
+  .certificates__link {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #ffffff;
+    text-decoration: none; }
+    .certificates__link svg {
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin-left: 8px; }

@@ -1,0 +1,19 @@
+section.certificates
+    .container
+        .certificates__row
+            .certificates__item(style="background-image: url(https://via.placeholder.com/654x402)")
+                .certificates__tag Помощь с визой
+                .certificates__title Lorem, ipsum dolor sit amet consectetur adipisicing.
+                .certificates__desc Lorem ipsum dolor sit amet.
+                a.certificates__link.h-btn(href="#") 
+                    span Подробнее
+                    +svg('gifts-more')
+        .certificates__row
+            - for (var i=0;i<4;i++)
+                .certificates__item(style="background-image: url(https://via.placeholder.com/317x191)")
+                    .certificates__tag Мебель
+                    .certificates__title Lorem, ipsum dolor sit amet.
+                    .certificates__desc Lorem ipsum dolor sit amet.
+                    a.certificates__link.h-btn(href="#") 
+                        span Подробнее
+                        +svg('gifts-more')
