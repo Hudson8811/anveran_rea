@@ -4,6 +4,20 @@
   margin-right: 26px;
   flex-shrink: 0;
 
+  &:before {
+    @include pseudo;
+    height: var(--header-height);
+    width: 100%;
+    @include centering-xy;
+  }
+
+  &:hover {
+    .h-favorites__content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   @include mq('tablet-small') {
     margin-right: 0;
   }
@@ -36,5 +50,102 @@
       border-radius: 10px;
       transform: translate(50%, -50%);
     }
+  }
+
+  &__content {
+    position: absolute;
+    top: calc(100% + 14px);
+    right: -64px;
+    width: 352px;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 32px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding: 28px 0 20px;
+    transition: opacity 0.2s linear, transform 0.2s linear;
+    opacity: 0;
+    transform: translateY(-200%);
+    z-index: 99;
+
+    @include mq('tablet-small') {
+      right: 0;
+      width: 280px;
+    }
+
+    &:before {
+      @include pseudo;
+      @include css-triangle(#fff, up, 18px);
+      top: -8px;
+      right: 64px;
+
+      @include mq('tablet-small') {
+        right: 0;
+      }
+    }
+
+    .more-btn {
+      margin-left: 20px;
+    }
+  }
+
+  &__wrapper {
+    height: 276px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__title {
+    display: block;
+    padding: 0 20px 12px 20px;
+    border-bottom: 1px solid #e1e3e6;
+    @include font-source-sans(20px, false, 600, 24px);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e1e3e6;
+    color: #161718;
+    text-decoration: none;
+    background-color: #fff;
+
+    &:hover {
+      background: #f9f9f9;
+
+      .h-favorites__name {
+        color: #4383ff;
+      }
+    }
+  }
+
+  &__text {
+    width: calc(100% - 48px);
+
+    .actual-card__price-wrapper {
+      margin-bottom: 4px;
+    }
+
+    .actual-card__price {
+      @include font-source-sans(15px, false, 500, 20px);
+    }
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 4px;
+    @include font-source-sans(14px, false, false, 18px);
+  }
+
+  &__place {
+    display: block;
+    @include font-source-sans(14px, #7f8285, false, 18px);
   }
 }
