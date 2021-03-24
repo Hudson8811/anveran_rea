@@ -9,6 +9,10 @@
     height: var(--header-height);
     width: 100%;
     @include centering-xy;
+
+    @include mq('tablet-small') {
+      height: 40px;
+    }
   }
 
   &:hover {

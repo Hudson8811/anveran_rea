@@ -264,6 +264,7 @@
       }
 
       &-tooltype {
+        box-sizing: content-box;
         position: absolute;
         left: -8px;
         top: calc(100% + 12px);

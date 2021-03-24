@@ -1,5 +1,6 @@
 .paper-list {
   position: sticky;
+  position: -webkit-sticky;
   top: var(--header-height);
   padding-top: 20px;
   width: 291px;
