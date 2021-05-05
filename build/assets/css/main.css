@@ -843,6 +843,14 @@ body {
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
     z-index: 99; }
+    .h-favorites__content:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      left: 0;
+      bottom: 100%; }
     @media only screen and (max-width: 639px) {
       .h-favorites__content {
         right: 0;
