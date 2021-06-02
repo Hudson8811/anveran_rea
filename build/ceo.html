@@ -87,103 +87,218 @@
                   <li class="f-step__types-item">Все типы недвижимости</li>
                 </ul>
               </div>
-              <div class="filters"><span class="f-step__types-input">Цена</span>
-                <ul class="f-step__types-content">
-                  <li class="f-step__types-item is--active">Цена</li>
-                  <li class="f-step__types-item">Цена1</li>
-                  <li class="f-step__types-item">Цена2</li>
-                  <li class="f-step__types-item">Цена3</li>
-                </ul>
+              <div class="filters filters--type-dropdown"><span class="f-step__types-input">Цена</span>
+                <form class="filters__drop-content">
+                  <div class="filters__drop-wrapper">
+                    <div class="filters__drop-title">Цена</div>
+                    <div class="filters__drop-row filters__drop-row--inputs">
+                      <div class="filters__input">
+                        <input type="text" name="" placeholder="От">
+                      </div>
+                      <div class="filters__input">
+                        <input type="text" name="" placeholder="До">
+                      </div>
+                    </div>
+                    <div class="filters__drop-row filters__drop-row--small">
+                      <label class="filters__drop small">
+                        <input type="radio" name="e1"><span>100 тыс.</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="e1"><span>300 тыс.</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="e1"><span>500 тыс.</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="e1"><span>1 млн.</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="e1"><span>2 млн.</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="e1"><span>3 млн.</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper">
+                    <div class="filters__drop-row">
+                      <label class="filters__drop circle">
+                        <input type="radio" name="e2"><span>₽</span>
+                      </label>
+                      <label class="filters__drop circle">
+                        <input type="radio" name="e2"><span>$</span>
+                      </label>
+                      <label class="filters__drop circle">
+                        <input type="radio" name="e2"><span>€</span>
+                      </label>
+                      <label class="filters__drop circle">
+                        <input type="radio" name="e2"><span>£</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper">
+                    <button class="filters__drop-remove">Сбросить</button>
+                    <button class="black-btn h-btn">Показать 64 объявления</button>
+                  </div>
+                </form>
               </div>
-              <div class="filters"><span class="f-step__types-input">Спальни и санузлы</span>
-                <ul class="f-step__types-content">
-                  <li class="f-step__types-item is--active">Спальни и санузлы </li>
-                  <li class="f-step__types-item">Спальни и санузлы1</li>
-                  <li class="f-step__types-item">Спальни и санузлы2</li>
-                  <li class="f-step__types-item">Спальни и санузлы3</li>
-                  <li class="f-step__types-item">Спальни и санузлы4</li>
-                </ul>
+              <div class="filters filters--type-dropdown"><span class="f-step__types-input">Спальни и санузлы</span>
+                <form class="filters__drop-content">
+                  <div class="filters__drop-wrapper">
+                    <div class="filters__drop-title">Кол-во спален</div>
+                    <div class="filters__drop-row filters__drop-row--small">
+                      <label class="filters__drop small">
+                        <input type="radio" name="w1"><span>Любое</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w1"><span>1</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w1"><span>2</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w1"><span>3</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w1"><span>4</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w1"><span>5+</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper">
+                    <div class="filters__drop-title">Кол-во санузлов</div>
+                    <div class="filters__drop-row filters__drop-row--small">
+                      <label class="filters__drop small">
+                        <input type="radio" name="w2"><span>Любое</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w2"><span>1</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w2"><span>2</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w2"><span>3</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w2"><span>4</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="w2"><span>5+</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper">
+                    <button class="black-btn h-btn">Показать 64 объявления</button>
+                  </div>
+                </form>
               </div>
-              <div class="filters"><span class="f-step__types-input">Площадь м<sup>2</sup></span>
-                <ul class="f-step__types-content">
-                  <li class="f-step__types-item is--active">Площадь м2</li>
-                  <li class="f-step__types-item">0000</li>
-                  <li class="f-step__types-item">000</li>
-                  <li class="f-step__types-item">00000</li>
-                  <li class="f-step__types-item">0</li>
-                </ul>
+              <div class="filters filters--type-dropdown"><span class="f-step__types-input">Площадь м<sup>2</sup></span>
+                <form class="filters__drop-content">
+                  <div class="filters__drop-wrapper">
+                    <div class="filters__drop-title">Метраж</div>
+                    <div class="filters__drop-row filters__drop-row--inputs">
+                      <div class="filters__input">
+                        <input type="text" name="" placeholder="От м2">
+                      </div>
+                      <div class="filters__input">
+                        <input type="text" name="" placeholder="До м2">
+                      </div>
+                    </div>
+                    <div class="filters__drop-row filters__drop-row--small">
+                      <label class="filters__drop small">
+                        <input type="radio" name="q1"><span>от 50</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="q1"><span>От 70</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="q1"><span>От 100</span>
+                      </label>
+                      <label class="filters__drop small">
+                        <input type="radio" name="q1"><span>От 300+</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filters__drop-wrapper">
+                    <button class="filters__drop-remove">Сбросить</button>
+                    <button class="black-btn h-btn">Показать 64 объявления</button>
+                  </div>
+                </form>
               </div>
-              <div class="filters filters__more"><span class="f-step__types-input">Ещё фильтры</span><span class="filters__more-icon">2</span>
-                <form class="filters__drop-content"> 
+              <div class="filters filters--type-dropdown filters__more"><span class="f-step__types-input">Ещё фильтры</span><span class="filters__more-icon">2</span>
+                <form class="filters__drop-content filters__drop-content--wide">
                   <div class="filters__drop-heading">Ещё фильтры</div>
-                  <div class="filters__drop-wrapper"> 
+                  <div class="filters__drop-wrapper">
                     <div class="filters__drop-title">Расстояние до моря</div>
                     <div class="filters__drop-row">
-                      <label class="filters__drop"> 
+                      <label class="filters__drop">
                         <input type="radio" name="1"><span>Первая линия</span>
                       </label>
-                      <label class="filters__drop"> 
+                      <label class="filters__drop">
                         <input type="radio" name="1"><span>До 100 м.</span>
                       </label>
-                      <label class="filters__drop"> 
+                      <label class="filters__drop">
                         <input type="radio" name="1"><span>До 200 м.</span>
                       </label>
-                      <label class="filters__drop"> 
+                      <label class="filters__drop">
                         <input type="radio" name="1"><span>До 500 м.</span>
                       </label>
-                      <label class="filters__drop"> 
+                      <label class="filters__drop">
                         <input type="radio" name="1"><span>Не важно</span>
                       </label>
                     </div>
                   </div>
-                  <div class="filters__drop-wrapper"> 
+                  <div class="filters__drop-wrapper">
                     <div class="filters__drop-title">Вид из окна</div>
                     <div class="filters__drop-row">
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="radio" name="2"><span>Море</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="radio" name="2"><span>Горы</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="radio" name="2"><span>Город</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="radio" name="2"><span>Не важно</span>
                       </label>
                     </div>
                   </div>
-                  <div class="filters__drop-wrapper"> 
+                  <div class="filters__drop-wrapper">
                     <div class="filters__drop-title">Дополнительно</div>
                     <div class="filters__drop-row">
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Бассейн</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Мебель</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Парковка</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Гараж</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Лифт</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Балкон</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Интернет</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>ТВ</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Сад</span>
                       </label>
-                      <label class="filters__drop circle"> 
+                      <label class="filters__drop circle">
                         <input type="checkbox" name="3"><span>Терраса</span>
                       </label>
                     </div>
@@ -195,7 +310,7 @@
                 </form>
               </div>
               <label class="filters filters__search">
-                <input class="filters__search-input" type="text"><a href="#">Регион </a>
+                <input class="filters__search-input" type="text"><a href="#">Регион</a>
               </label><a class="blue-btn h-btn" href="#">Поиск</a>
             </div>
             <div class="filters__row filters__tag-row">

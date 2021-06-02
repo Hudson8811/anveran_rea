@@ -88,8 +88,11 @@ $(document).ready(function(){
         $(this).toggleClass('is--active')
     })
 
-    $('.filters__more .f-step__types-input').click(function(){
-      $('.filters__drop-content').slideToggle()
+    $('.filters--type-dropdown .f-step__types-input').click(function(){
+    	let drop = $(this).siblings('.filters__drop-content');
+			$('.filters__drop-content').not(drop).css('z-index', 2).slideUp();
+			$('.f-step__types-content').slideUp();
+			drop.css('z-index', 3).slideToggle();
     })
 
     $('.imap__content-btn').click(function(){
