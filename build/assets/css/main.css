@@ -1359,6 +1359,9 @@ body {
     .actual-card__desc {
       position: relative;
       margin-bottom: 16px; }
+      .actual-card__desc a {
+        text-decoration: none;
+        color: #000000; }
       .actual-card__desc-title {
         display: block;
         margin-bottom: 4px;
